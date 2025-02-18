@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Questrial&display=swap');
+
+body {
+    background-color: black;
+    color:#f2f2f2;
+    font-family: "open sans", sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: "questrial", sans-serif;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: black;
+  }
+
+#navbar a {
+    float: left;
+    display: block;
+    text-align: center;
+    margin: auto 8px;
+    padding: 14px;
+    width: 90px;
+    height: 15px;
+    border-radius: 25px;
+    background-color: indigo;
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.content {
+    padding: 16px;
+}
