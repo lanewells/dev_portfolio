@@ -71,6 +71,22 @@ section {
     display: block;
 }
 
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column .column-small {
+    align-items: end;
+    padding: 10px;
+}
+
 h1 {
     font-size: 48px;
 }
@@ -171,3 +187,6 @@ h1 {
     margin: 0 5px 5px 0;
 }
 
+.small-container {
+    width: fit-content;
+}
