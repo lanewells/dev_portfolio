@@ -28,6 +28,29 @@ h1, h2, h3 {
     margin-bottom: 15px;
 }
 
+h1 {
+    margin-bottom: 40px;
+}
+
+h3 {
+    letter-spacing: .15em;
+    font-size: 22px;
+    text-transform: UPPERCASE;
+}
+
+#resume h3 {
+    letter-spacing: unset;
+    font-size: 24px;
+}
+
+#resume h2 {
+    font-size: 32px;
+}
+
+a {
+    text-decoration: none;
+}
+
 #navbar {
     position: sticky;
     top: 0;
@@ -39,7 +62,7 @@ h1, h2, h3 {
     z-index: 2;
 }
 
-#navbar a {
+#navbar a, #resume a {
     display: inline-block;
     text-align: center;
     margin: auto 20px;
@@ -48,8 +71,11 @@ h1, h2, h3 {
     height: 15px;
     border-radius: 25px;
     background-color: #3a2972;
-    text-decoration: none;
     color: #f2f2f2;
+}
+
+#resume a {
+    margin: 10px auto 10px 0px;
 }
 
 .content {
@@ -87,6 +113,11 @@ section {
     padding: 10px;
 }
 
+.flex-column .column-large {
+    align-items: start;
+    padding: 15px 10px 0px 10px;
+}
+
 h1 {
     font-size: 48px;
 }
@@ -105,6 +136,20 @@ h1 {
     font-size: 12px;
     font-weight: lighter;
     letter-spacing: .06em;
+}
+
+#resume p {
+    font-size: 14px;
+    font-weight: light;
+    margin-bottom: 14px;
+}
+
+#resume .flex-container {
+    justify-content: space-between;
+}
+
+#resume .flex-column {
+    width: 300px;
 }
 
 .column {
@@ -174,6 +219,7 @@ h1 {
     overflow: hidden;
     width: 300px;
     height: 150px;
+    margin-bottom: 20px;
 }
 
 .thumbnail img {
@@ -185,8 +231,4 @@ h1 {
 .linked-icon {
     width: 30px;
     margin: 0 5px 5px 0;
-}
-
-.small-container {
-    width: fit-content;
 }
