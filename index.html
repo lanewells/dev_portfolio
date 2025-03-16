@@ -12,12 +12,14 @@
         <div id="scroll-icon"><img src="assets/images/scroll-bar.png"></div>
     </header>
     <div id="navbar">
-        <a class="label" href="#about-me">ABOUT</a>
-        <a class="label" href="#projects">PROJECTS</a>
-        <a class="label" href="#resume">RESUME</a>
-        <a class="label" href="#get-in-touch">CONTACT</a>
+        <a class="label" href="#about-target">ABOUT</a>
+        <a class="label" href="#projects-target">PROJECTS</a>
+        <a class="label" href="#resume-target">RESUME</a>
+        <a class="label" href="#contact-target">CONTACT</a>
     </div>
     <div class="content">
+        <div id="about-target" class="page-target"></div>
+
         <section class="flex-container">
             <div class=" column column-small">
                <h1 id="about-me">ABOUT ME</h1>
@@ -78,6 +80,8 @@
                 </div>
             </div>
         </section>
+
+        <div id="projects-target" class="page-target"></div>
 
         <section id="projects" class="block-container">
             <h1>PROJECTS</h1>
@@ -163,45 +167,54 @@
 
 
             </div>
+            
         </section>
 
+        <div id="resume-target" class="page-target"></div>
 
         <section id="resume" class="block-container">
-            <h1>RESUME</h1>
+            <h1 id="resume-title">RESUME</h1>
             <div class="flex-container">
 
-                <div class="flex-column">
-                    <div class="flex-column column-large">
-                        <h1>2024</h1>
-                        <h3>Software Engineering<br>Immersive</h3>
+                <div class="flex-row">
+                    <div>
+                        <h1 class="vertical-text">2024</h1>
+                    </div>
+                    <div class="flex-column">
                         <h2>General Assembly</h2>
+                        <h3>Software Engineering Immersive</h3>
                         <p>Certificate of Completion</p>
                         <div>
-                            <a class="label" href="http://www.patience-is-a-virtue.org/">View certificate</a>
+                            <a class="label" target="_blank" href="https://drive.google.com/file/d/18IUNZebtIgQpibNEgaAztrnhJ4Vb_bI5/view?usp=drive_link">View certificate</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="flex-column">
-                    <div class="flex-column column-large">
-                        <h2>2021-2023</h2>
-                        <h3>Graphic Designer</h3>
+                <div class="flex-row">
+                    <div>
+                        <h1 class="vertical-text">2021-<br>2023</h1>
+                    </div>
+                    <div class="flex-column">
                         <h2>Urban Arena</h2>
+                        <h3>Graphic Designer</h3>
                         <p>Landscape Architecture, Architecture, Planning, Branding</p>
                     </div>
                 </div>
 
-                <div class="flex-column">
-                    <div class="flex-column column-large">
-                        <h2>2019</h2>
-                        <h3>Bachelor of Arts</h3>
+                <div class="flex-row">
+                    <div>
+                        <h1 class="vertical-text">2019</h1>
+                    </div>
+                    <div class="flex-column">
                         <h2>California Polytechnic State University</h2>
-                        <p>San Luis Obispo, CA</p>
+                        <h3>Bachelor of Arts</h3>
+                        <p>Certificate of Completion</p>
                     </div>
                 </div>
 
             </div>
         </section>
+        <div id="contact-target" class="page-target"></div>
         <section>
             <h1 id="get-in-touch">GET IN TOUCH</h1>
             <p>LOCATED <br>San Francisco Bay Area, California</p>

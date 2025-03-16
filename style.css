@@ -83,7 +83,7 @@ a {
 }
 
 section {
-    height: 100vh;
+    height: 80vh;
 }
 
 .flex-container {
@@ -141,7 +141,7 @@ h1 {
 #resume p {
     font-size: 14px;
     font-weight: light;
-    margin-bottom: 14px;
+    margin-bottom: 10px;
 }
 
 #resume .flex-container {
@@ -231,4 +231,19 @@ h1 {
 .linked-icon {
     width: 30px;
     margin: 0 5px 5px 0;
+}
+
+.vertical-text {
+    writing-mode: sideways-lr;
+    margin: auto 10px;
+    text-align: end;
+}
+
+#resume-title {
+    padding: 0px 0px 100px 0px;
+}
+
+.page-target {
+    height: 10px;
+    margin: 0px auto 100px auto;
 }
