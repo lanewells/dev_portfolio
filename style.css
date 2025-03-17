@@ -149,7 +149,7 @@ h1 {
 }
 
 #resume .flex-column {
-    width: 300px;
+    width: 290px;
 }
 
 .column {
@@ -228,7 +228,7 @@ h1 {
     min-height: 100%
 }
 
-.linked-icon {
+.icon {
     width: 30px;
     margin: 0 5px 5px 0;
 }
