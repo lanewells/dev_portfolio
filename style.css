@@ -30,6 +30,11 @@ h1, h2, h3 {
 
 h1 {
     margin-bottom: 40px;
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 32px;
 }
 
 h3 {
@@ -41,10 +46,6 @@ h3 {
 #resume h3 {
     letter-spacing: unset;
     font-size: 24px;
-}
-
-#resume h2 {
-    font-size: 32px;
 }
 
 a {
@@ -62,7 +63,7 @@ a {
     z-index: 2;
 }
 
-#navbar a, #resume a {
+#navbar a, #resume a, footer a {
     display: inline-block;
     text-align: center;
     margin: auto 20px;
@@ -78,6 +79,9 @@ a {
     margin: 10px auto 10px 0px;
 }
 
+#contact a {
+    color: white;
+}
 .content {
     padding: 100px;
 }
@@ -86,21 +90,23 @@ section {
     height: 80vh;
 }
 
+.block-container {
+    display: block;
+    width: 90vw;
+    margin: auto;
+    padding: 10px;
+}
+
 .flex-container {
     display: flex;
     gap: 30px;
     flex-direction: row;
-    width: 100vw - 200px;
-}
-
-.block-container {
-    display: block;
+    width: 90vw;
 }
 
 .flex-column {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
 }
 
 .flex-row {
@@ -108,28 +114,34 @@ section {
     flex-direction: row;
 }
 
-.flex-column .column-small {
+.wrap {
+    flex-wrap: wrap;
+}
+
+.column-small {
     align-items: end;
     padding: 10px;
+    width: 40%;
 }
 
-.flex-column .column-large {
+.column-large {
     align-items: start;
-    padding: 15px 10px 0px 10px;
-}
-
-h1 {
-    font-size: 48px;
+    padding: 10px;
+    width: 60%;
 }
 
 .label {
     font-size: 14px;
     font-family: "questrial", sans-serif;
     font-weight: 400;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 0.06em;
 }
 
-.subheading {
-    padding-top: 25px;
+.indent p {
+    text-indent: 40px;
+    line-height: 24px;
 }
 
 #projects p {
@@ -156,18 +168,6 @@ h1 {
     float: left;
 }
 
-.column-half {
-    width: 50%;
-}
-
-.column-small {
-    width: 33%;
-}
-
-.column-large {
-    width: 67%;
-}
-
 #scroll-icon {
     margin-top: 100px;
 }
@@ -179,7 +179,7 @@ h1 {
     width: 100%;
     max-width: 800px;
     position: relative;
-    padding: 20px;
+    padding: 20px 0px;
     z-index: 1;
 }
 
@@ -239,11 +239,37 @@ h1 {
     text-align: end;
 }
 
-#resume-title {
+.title {
     padding: 0px 0px 100px 0px;
 }
 
 .page-target {
     height: 10px;
     margin: 0px auto 100px auto;
+}
+
+.chip {
+    display: inline-flex;
+    text-wrap: nowrap;
+    padding: 0 25px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: rgba(104, 84, 182, 0.267);
+}
+  
+.chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #302359;
+}
+
+span {
+    font-weight: bolder;
+    font-size: 22px;
+    color: #a18bf9;
 }
