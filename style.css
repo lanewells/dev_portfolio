@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Questrial&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   margin: 0;
@@ -6,46 +6,46 @@
 }
 
 :root {
-  --green-color: #cbf381;
-  --blue-color: #4731d3;
-  --light-color: #f9f9f9;
-  --dark-color: #222222;
-  --accent-color: #56cbf9;
-  --main-font: "Arial", "Helvetica", "sans-serif";
-  --secondary-font: "Georgia", "Times New Roman", "serif";
+  --dark-blue: #121d3d;
+  --white-blue: #e2e8f0;
+  --light-blue: #8498bd;
+  --accent-opaque: #4dbdc2;
+  --accent-translucent: #4dbdc2;
+  --main-font: "Poppins", "Arial", "Helvetica", sans-serif;
+  --secondary-font: "JetBrains Mono", "Courier New", monospace;
 }
 
 body {
   display: flex;
-  background-color: var(--dark-color);
-  color: var(--light-color);
+  background-color: var(--dark-blue);
+  color: var(--light-blue);
   font-family: var(--main-font);
 }
 
 .left-column {
-  background-color: var(--blue-color);
   position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
-  width: 50vw;
-  padding: 2rem;
+  width: 30vw;
+  padding: 5rem 2rem;
+  margin-left: 5vw;
 }
 
 .right-column {
-  margin-left: 50vw;
+  margin-left: 45vw;
   width: 50vw;
-  padding: 2rem;
   box-sizing: border-box;
+  padding: 5rem 2rem 2rem 2rem;
 }
 
 a {
   text-decoration: none;
-  color: var(--green-color);
+  color: var(--accent-opaque);
 }
 
 h1 {
-  color: var(--green-color);
+  color: var(--white-blue);
   margin-bottom: 40px;
   font-size: 48px;
 }
@@ -56,7 +56,6 @@ h2 {
 
 .coder-gxrl {
   font-family: var(--secondary-font);
-  color: var(--green-color);
 }
 
 .medium {
@@ -74,7 +73,7 @@ h2 {
 }
 
 #contact a {
-  color: var(--light-color);
+  color: var(--light-blue);
 }
 
 .block-container,
@@ -83,7 +82,7 @@ h2 {
 }
 .block-container {
   display: block;
-  margin: 30px auto 50px auto;
+  margin: 0 auto 50px auto;
   padding: 10px;
 }
 
@@ -163,7 +162,7 @@ h2 {
 
 .quick-link,
 .quick-link a {
-  color: var(--light-color);
+  color: var(--light-blue);
 }
 
 .quick-link .row {
@@ -210,9 +209,6 @@ h2 {
 .bubble {
   width: 125px;
   height: 100px;
-  background-color: var(--dark-color);
-  border: solid 4px var(--dark-color);
-  border-radius: 50%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -238,9 +234,7 @@ footer a {
   padding: 14px;
   width: 120px;
   height: 15px;
-  border-radius: 25px;
-  background-color: var(--green-color);
-  color: var(--light-color);
+  color: var(--light-blue);
 }
 
 .tool-icon {
@@ -277,8 +271,6 @@ footer a {
   height: 50px;
   font-size: 16px;
   line-height: 50px;
-  border-radius: 25px;
-  background-color: var(--green-color);
 }
 
 .chip img {
@@ -286,13 +278,12 @@ footer a {
   margin: 0 10px 0 -25px;
   height: 50px;
   width: 50px;
-  border-radius: 50%;
 }
 
 span {
   font-weight: bolder;
   font-size: 22px;
-  color: var(--green-color);
+  color: var(--white-blue);
 }
 
 svg.feather {
@@ -300,18 +291,18 @@ svg.feather {
   height: 18px;
   margin-left: 0.2rem;
   vertical-align: top;
-  stroke: var(--green-color);
+  stroke: var(--white-blue);
   stroke-width: 2;
   transition: transform 0.2s ease;
 }
 
 a:hover svg.feather {
   transform: translateX(4px) rotate(3deg);
-  stroke: var(--accent-color);
+  stroke: var(--accent-opaque);
 }
 
 #projects a:hover {
-  color: var(--accent-color);
+  color: var(--accent-opaque);
 }
 
 @media (max-width: 768px) {
