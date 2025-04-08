@@ -10,7 +10,7 @@
   --white-blue: #e2e8f0;
   --light-blue: #8498bd;
   --accent-opaque: #4dbdc2;
-  --accent-translucent: #4dbdc2;
+  --accent-translucent: #4dbcc283;
   --main-font: "Poppins", "Arial", "Helvetica", sans-serif;
   --secondary-font: "JetBrains Mono", "Courier New", monospace;
 }
@@ -22,7 +22,7 @@ body {
   font-family: var(--main-font);
 }
 
-.left-column {
+#left-column {
   position: fixed;
   top: 0;
   left: 0;
@@ -32,7 +32,7 @@ body {
   margin-left: 5vw;
 }
 
-.right-column {
+#right-column {
   margin-left: 45vw;
   width: 50vw;
   box-sizing: border-box;
@@ -51,15 +51,39 @@ h1 {
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 24px;
+  color: var(--white-blue);
+  font-weight: 500;
+}
+
+h2 span {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+}
+
+#projects p {
+  font-size: 14px;
+}
+
+.indent p {
+  text-indent: 40px;
+  line-height: 24px;
+}
+
+.title {
+  margin-bottom: 3rem;
+}
+
+#projects .title {
+  margin-bottom: 4rem;
 }
 
 .coder-gxrl {
   font-family: var(--secondary-font);
-}
-
-.medium {
-  font-size: 1.5rem;
 }
 
 #navbar {
@@ -80,9 +104,10 @@ h2 {
 .flex-container {
   width: 100%;
 }
+
 .block-container {
   display: block;
-  margin: 0 auto 50px auto;
+  margin: 0 auto 8rem auto;
   padding: 10px;
 }
 
@@ -93,7 +118,7 @@ h2 {
 }
 
 #projects .flex-container {
-  gap: 50px;
+  gap: 75px;
 }
 
 .flex-row {
@@ -105,7 +130,7 @@ h2 {
 .card {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 15px;
 }
 
 .wrap {
@@ -129,28 +154,17 @@ h2 {
   min-width: 200px;
 }
 
-.indent p {
-  text-indent: 40px;
-  line-height: 24px;
-}
-
-#projects p {
-  font-size: 12px;
-  font-weight: lighter;
-  letter-spacing: 0.06em;
-}
-
-#projects .flex-container {
+.flex-container {
   flex-wrap: wrap;
   width: 100%;
 }
 
-#projects .flex-row {
+.flex-row {
   flex-wrap: wrap;
   width: 100%;
 }
 
-#projects .flex-column {
+.flex-column {
   width: 100%;
 }
 
@@ -202,8 +216,8 @@ h2 {
   width: 100%;
   max-width: 800px;
   position: relative;
-  padding: 20px 0px;
   z-index: 1;
+  align-items: baseline;
 }
 
 .bubble {
@@ -247,9 +261,11 @@ footer a {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  min-width: 200px;
-  width: 200px;
-  height: 125px;
+  min-width: 150px;
+  width: 150px;
+  height: 100px;
+  border-radius: 5px;
+  border: 3px solid var(--accent-translucent);
 }
 
 .thumbnail img {
@@ -310,8 +326,8 @@ a:hover svg.feather {
     flex-direction: column;
   }
 
-  .left-column,
-  .right-column {
+  #left-column,
+  #right-column {
     position: static;
     width: 100vw;
     height: auto;

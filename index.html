@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="left-column">
+    <div id="left-column">
       <h3 class="coder-gxrl">Hi, my name is</h3>
       <h1>Delaney Wells<br /><span>Software Engineer</span></h1>
       <p>
@@ -52,7 +52,7 @@
       </div>
     </div>
 
-    <div class="right-column">
+    <div id="right-column">
       <div id="about" class="block-container">
         <div class="flex-container wrap indent">
           <p>
@@ -72,9 +72,9 @@
       </div>
 
       <div id="technologies" class="block-container">
-        <h1 class="coder-gxrl medium">
+        <h3 class="coder-gxrl title">
           I have experience with these technologies:
-        </h1>
+        </h3>
         <div class="bubble-container">
           <div class="bubble">
             <img class="tool-icon" src="assets/images/python.png" />
@@ -137,36 +137,36 @@
             <p>Heroku</p>
           </div>
         </div>
-        <h1 id="skills" class="coder-gxrl medium">I am also skilled in:</h1>
+        <h3 id="skills" class="coder-gxrl title">I am also skilled in:</h3>
         <div class="bubble-container">
           <div class="bubble">
             <img class="tool-icon" src="assets/images/rest-apis.png" />
             <p>RESTful APIs</p>
           </div>
           <div class="bubble">
-            <img class="tool-icon" src="assets/images/express.js.png" />
+            <img class="tool-icon" src="assets/images/agile.png" />
             <p>Agile</p>
           </div>
           <div class="bubble">
-            <img class="tool-icon" src="assets/images/express.js.png" />
+            <img class="tool-icon" src="assets/images/git-workflow.png" />
             <p>Git Workflow</p>
           </div>
           <div class="bubble">
-            <img class="tool-icon" src="assets/images/express.js.png" />
+            <img class="tool-icon" src="assets/images/oop.png" />
             <p>Object-Oriented Programming (OOP)</p>
           </div>
         </div>
       </div>
 
       <div id="projects" class="block-container">
-        <h1>Projects</h1>
+        <h3 class="coder-gxrl title">Here is some of my work:</h3>
         <div class="flex-container wrap">
           <div class="card">
             <div class="thumbnail">
               <img src="assets/images/rooted.png" />
             </div>
             <div class="flex-column column-justify-left">
-              <h2>/Rooted</h2>
+              <h2><span class="coder-gxrl">01.</span> Rooted</h2>
               <p>
                 Rooted is a family-centered application where relatives can come
                 together to build a shared digital timeline...
@@ -187,7 +187,7 @@
               <img src="assets/images/momento.jpg" />
             </div>
             <div class="flex-column column-justify-left">
-              <h2>/Momento</h2>
+              <h2><span class="coder-gxrl">02.</span> Momento</h2>
               <p>
                 Momento was created so users can send time capsules as a message
                 to their future selves, a loved one, or a shared group...
@@ -208,7 +208,7 @@
               <img src="assets/images/hung-up.png" />
             </div>
             <div class="flex-column column-justify-left">
-              <h2>/Hung-Up</h2>
+              <h2><span class="coder-gxrl">03.</span> Hung-Up</h2>
               <p>
                 An application I designed to help beat decision fatigue while
                 getting dressed...
@@ -229,7 +229,7 @@
               <img src="assets/images/mashed.png" />
             </div>
             <div class="flex-column column-justify-left">
-              <h2>/Mashed</h2>
+              <h2><span class="coder-gxrl">04.</span> Mashed</h2>
               <p>
                 This game is based on the legendary schoolyard game "MASH",
                 which predicts your future...
@@ -244,91 +244,89 @@
               </div>
             </div>
           </div>
-
-          <div id="resume" class="block-container">
-            <h1>Resume</h1>
-            <div class="flex-container">
-              <div class="flex-row">
-                <div>
-                  <h1 class="vertical-text">2024</h1>
-                </div>
-                <div class="flex-column">
-                  <h2>General Assembly</h2>
-                  <h3>Software Engineering Immersive</h3>
-                  <p>Certificate of Completion</p>
-                  <div>
-                    <a
-                      target="_blank"
-                      href="https://drive.google.com/file/d/18IUNZebtIgQpibNEgaAztrnhJ4Vb_bI5/view?usp=drive_link"
-                      >View certificate</a
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <div class="flex-row">
-                <div>
-                  <h1 class="vertical-text">2021-<br />2023</h1>
-                </div>
-                <div class="flex-column">
-                  <h2>Urban Arena</h2>
-                  <h3>Graphic Designer</h3>
-                  <p>
-                    Landscape Architecture, Architecture, Planning, Branding
-                  </p>
-                </div>
-              </div>
-
-              <div class="flex-row">
-                <div>
-                  <h1 class="vertical-text">2019</h1>
-                </div>
-                <div class="flex-column">
-                  <h2>California Polytechnic State University</h2>
-                  <h3>Bachelor of Arts</h3>
-                  <p>San Luis Obispo, CA</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div id="contact" class="block-container">
-            <h1>Contact</h1>
-            <div class="flex-container wrap">
-              <div class="chip">
-                <img class="icon" src="assets/images/golden-gate.png" />
-                <p>San Francisco Bay Area, California</p>
-              </div>
-              <div class="chip">
-                <img class="icon" src="assets/images/email.png" />
-                <p>delaneywells.k@gmail.com</p>
-              </div>
-              <div class="chip">
-                <img class="icon" src="assets/images/phone.png" />
-                <p>424-558-2878</p>
-              </div>
-              <div class="chip">
-                <img class="icon" src="assets/images/linkedin.png" />
-                <a href="https://www.linkedin.com/in/delaneywells/"
-                  ><p>in/delaneywells</p></a
-                >
-              </div>
-              <div class="chip">
-                <a href="https://github.com/lanewells">
-                  <img class="icon" src="assets/images/github-v2.png" />
-                  <p>GitHub</p>
-                </a>
-              </div>
-              <div class="chip">
-                <img class="icon" src="assets/images/copy.png" />
-                <p>delaneywells.dev</p>
-              </div>
-            </div>
-          </div>
-
-          <footer><a href="#top">Back to top</a></footer>
         </div>
       </div>
+
+      <div id="resume" class="block-container">
+        <h1>Resume</h1>
+        <div class="flex-container">
+          <div class="flex-row">
+            <div>
+              <h1 class="vertical-text">2024</h1>
+            </div>
+            <div class="flex-column">
+              <h2>General Assembly</h2>
+              <h3>Software Engineering Immersive</h3>
+              <p>Certificate of Completion</p>
+              <div>
+                <a
+                  target="_blank"
+                  href="https://drive.google.com/file/d/18IUNZebtIgQpibNEgaAztrnhJ4Vb_bI5/view?usp=drive_link"
+                  >View certificate</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-row">
+            <div>
+              <h1 class="vertical-text">2021-<br />2023</h1>
+            </div>
+            <div class="flex-column">
+              <h2>Urban Arena</h2>
+              <h3>Graphic Designer</h3>
+              <p>Landscape Architecture, Architecture, Planning, Branding</p>
+            </div>
+          </div>
+
+          <div class="flex-row">
+            <div>
+              <h1 class="vertical-text">2019</h1>
+            </div>
+            <div class="flex-column">
+              <h2>California Polytechnic State University</h2>
+              <h3>Bachelor of Arts</h3>
+              <p>San Luis Obispo, CA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="contact" class="block-container">
+        <h1>Contact</h1>
+        <div class="flex-container wrap">
+          <div class="chip">
+            <img class="icon" src="assets/images/golden-gate.png" />
+            <p>San Francisco Bay Area, California</p>
+          </div>
+          <div class="chip">
+            <img class="icon" src="assets/images/email.png" />
+            <p>delaneywells.k@gmail.com</p>
+          </div>
+          <div class="chip">
+            <img class="icon" src="assets/images/phone.png" />
+            <p>424-558-2878</p>
+          </div>
+          <div class="chip">
+            <img class="icon" src="assets/images/linkedin.png" />
+            <a href="https://www.linkedin.com/in/delaneywells/"
+              ><p>in/delaneywells</p></a
+            >
+          </div>
+          <div class="chip">
+            <a href="https://github.com/lanewells">
+              <img class="icon" src="assets/images/github-v2.png" />
+              <p>GitHub</p>
+            </a>
+          </div>
+          <div class="chip">
+            <img class="icon" src="assets/images/copy.png" />
+            <p>delaneywells.dev</p>
+          </div>
+        </div>
+      </div>
+
+      <footer><a href="#top">Back to top</a></footer>
     </div>
 
     <script src="https://unpkg.com/feather-icons"></script>
