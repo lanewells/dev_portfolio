@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Questrial&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   margin: 0;
@@ -6,52 +6,81 @@
 }
 
 :root {
-  --green-color: #cbf381;
-  --blue-color: #4731d3;
-  --light-color: #f9f9f9;
-  --dark-color: #222222;
-  --accent-color: #56cbf9;
-  --main-font: "Arial", "Helvetica", "sans-serif";
-  --secondary-font: "Georgia", "Times New Roman", "serif";
-}
-
-a {
-  text-decoration: none;
-  color: var(--dark-color);
+  --dark-blue: #121d3d;
+  --white-blue: #e2e8f0;
+  --light-blue: #8498bd;
+  --accent-opaque: #4dbdc2;
+  --accent-translucent: #4dbcc29f;
+  --main-font: "Poppins", "Arial", "Helvetica", sans-serif;
+  --secondary-font: "JetBrains Mono", "Courier New", monospace;
 }
 
 body {
   display: flex;
-  background-color: var(--blue-color);
-  color: var(--dark-color);
+  background-color: var(--dark-blue);
+  color: var(--light-blue);
   font-family: var(--main-font);
 }
 
-.left-column {
-  background-color: var(--blue-color);
+#left-column {
   position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
-  width: 50vw;
-  padding: 2rem;
+  width: 30vw;
+  padding: 5rem 2rem;
+  margin-left: 5vw;
 }
 
-.right-column {
-  margin-left: 50vw;
+#right-column {
+  margin-left: 45vw;
   width: 50vw;
-  padding: 2rem;
   box-sizing: border-box;
+  padding: 5rem 2rem 2rem 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--accent-opaque);
 }
 
 h1 {
-  color: var(--green-color);
+  color: var(--white-blue);
   margin-bottom: 40px;
   font-size: 48px;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 24px;
+  color: var(--white-blue);
+  font-weight: 500;
+}
+
+h2 span {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+}
+
+#projects p,
+#resume p {
+  font-size: 14px;
+}
+
+.indent p {
+  text-indent: 40px;
+  line-height: 24px;
+}
+
+.title {
+  margin-bottom: 3rem;
+}
+
+#projects .title {
+  margin-bottom: 4rem;
 }
 
 .coder-gxrl {
@@ -69,16 +98,17 @@ h2 {
 }
 
 #contact a {
-  color: var(--light-color);
+  color: var(--light-blue);
 }
 
 .block-container,
 .flex-container {
   width: 100%;
 }
+
 .block-container {
   display: block;
-  margin: auto;
+  margin: 0 auto 8rem auto;
   padding: 10px;
 }
 
@@ -89,7 +119,7 @@ h2 {
 }
 
 #projects .flex-container {
-  gap: 50px;
+  gap: 75px;
 }
 
 .flex-row {
@@ -101,7 +131,13 @@ h2 {
 .card {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 15px;
+}
+
+.card div div {
+  display: flex;
+  gap: 20px;
+  margin-top: 0.25rem;
 }
 
 .wrap {
@@ -125,28 +161,17 @@ h2 {
   min-width: 200px;
 }
 
-.indent p {
-  text-indent: 40px;
-  line-height: 24px;
-}
-
-#projects p {
-  font-size: 12px;
-  font-weight: lighter;
-  letter-spacing: 0.06em;
-}
-
-#projects .flex-container {
+.flex-container {
   flex-wrap: wrap;
   width: 100%;
 }
 
-#projects .flex-row {
+.flex-row {
   flex-wrap: wrap;
   width: 100%;
 }
 
-#projects .flex-column {
+.flex-column {
   width: 100%;
 }
 
@@ -158,7 +183,7 @@ h2 {
 
 .quick-link,
 .quick-link a {
-  color: var(--light-color);
+  color: var(--light-blue);
 }
 
 .quick-link .row {
@@ -170,20 +195,6 @@ h2 {
 .quick-link img {
   width: 25px;
   margin: 5px;
-}
-
-#resume p {
-  font-size: 14px;
-  font-weight: light;
-  margin-bottom: 10px;
-}
-
-#resume .flex-container {
-  justify-content: space-between;
-}
-
-#resume .flex-column {
-  width: 290px;
 }
 
 #scroll-icon {
@@ -198,16 +209,13 @@ h2 {
   width: 100%;
   max-width: 800px;
   position: relative;
-  padding: 20px 0px;
   z-index: 1;
+  align-items: baseline;
 }
 
 .bubble {
-  width: 100px;
+  width: 125px;
   height: 100px;
-  background-color: var(--blue-color);
-  border: solid 4px var(--dark-color);
-  border-radius: 50%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -215,15 +223,15 @@ h2 {
   align-items: center;
   transition: transform 0.2s ease-in-out;
   position: relative;
-}
-
-.bubble i {
-  font-size: 20px;
-  color: var(--dark-color);
+  font-size: 14px;
 }
 
 .bubble:hover {
   transform: scale(1.2);
+}
+
+#skills {
+  margin-top: 50px;
 }
 
 footer a {
@@ -233,9 +241,7 @@ footer a {
   padding: 14px;
   width: 120px;
   height: 15px;
-  border-radius: 25px;
-  background-color: var(--green-color);
-  color: var(--light-color);
+  color: var(--light-blue);
 }
 
 .tool-icon {
@@ -248,9 +254,11 @@ footer a {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  min-width: 200px;
-  width: 200px;
-  height: 125px;
+  min-width: 150px;
+  width: 150px;
+  height: 100px;
+  border-radius: 5px;
+  border: 3px solid var(--accent-translucent);
 }
 
 .thumbnail img {
@@ -265,11 +273,6 @@ footer a {
   text-align: end;
 }
 
-.page-target {
-  height: 10px;
-  margin: 0px auto 100px auto;
-}
-
 .chip {
   display: inline-flex;
   text-wrap: nowrap;
@@ -277,8 +280,6 @@ footer a {
   height: 50px;
   font-size: 16px;
   line-height: 50px;
-  border-radius: 25px;
-  background-color: var(--green-color);
 }
 
 .chip img {
@@ -286,13 +287,12 @@ footer a {
   margin: 0 10px 0 -25px;
   height: 50px;
   width: 50px;
-  border-radius: 50%;
 }
 
 span {
   font-weight: bolder;
   font-size: 22px;
-  color: var(--blue-color);
+  color: var(--white-blue);
 }
 
 svg.feather {
@@ -300,18 +300,22 @@ svg.feather {
   height: 18px;
   margin-left: 0.2rem;
   vertical-align: top;
-  stroke: var(--dark-color);
+  stroke: var(--accent-translucent);
   stroke-width: 2;
   transition: transform 0.2s ease;
 }
 
 a:hover svg.feather {
   transform: translateX(4px) rotate(3deg);
-  stroke: #a18bf9;
+  stroke: var(--accent-opaque);
+}
+
+#projects a {
+  color: var(--accent-translucent);
 }
 
 #projects a:hover {
-  color: #a18bf9;
+  color: var(--accent-opaque);
 }
 
 @media (max-width: 768px) {
@@ -319,8 +323,8 @@ a:hover svg.feather {
     flex-direction: column;
   }
 
-  .left-column,
-  .right-column {
+  #left-column,
+  #right-column {
     position: static;
     width: 100vw;
     height: auto;
