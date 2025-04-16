@@ -96,6 +96,11 @@ p {
   margin-bottom: 4rem;
 }
 
+#resume h3 {
+  font-size: 24px;
+  font-weight: normal;
+}
+
 .coder-gxrl {
   font-family: var(--secondary-font);
 }
@@ -176,16 +181,13 @@ p {
   display: flex;
   gap: 30px;
   flex-direction: row;
-}
-
-#projects .flex-container {
-  gap: 75px;
-}
-
-.flex-row {
-  display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  width: 100%;
+}
+
+#projects .flex-container,
+#resume .flex-container {
+  gap: 75px;
 }
 
 .card {
@@ -221,18 +223,29 @@ p {
   min-width: 200px;
 }
 
-.flex-container {
-  flex-wrap: wrap;
-  width: 100%;
-}
-
 .flex-row {
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
 }
 
 .flex-column {
+  display: flex;
+  flex-direction: column;
   width: 100%;
+}
+
+.column-justify-right {
+  flex: 1;
+}
+
+#resume .column-justify-right p {
+  padding-top: 5px;
+}
+
+.column-justify-left {
+  flex: 3;
 }
 
 .column-small,
@@ -384,11 +397,13 @@ a:hover svg.feather {
   stroke: var(--white-blue);
 }
 
-#projects a {
+#projects a,
+#resume a {
   color: var(--accent-translucent);
 }
 
-#projects a:hover {
+#projects a:hover,
+#resume a:hover {
   color: var(--accent-opaque);
 }
 
