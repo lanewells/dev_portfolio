@@ -8,70 +8,104 @@
   </head>
   <body>
     <div id="left-column">
-      <h3 class="coder-gxrl">Hi, my name is</h3>
-      <h1>Delaney Wells<br /><span>Software Engineer</span></h1>
+      <div>
+        <h3 class="coder-gxrl">Hi, my name is</h3>
+        <h1>Delaney Wells</h1>
+        <h1 id="job-title">Software Engineer</h1>
+      </div>
       <p>
-        Full-stack developer based in the SF Bay Area, focused on building
-        sustainable, scalable databases and interfaces.
+        Full-stack developer based in the San Francisco Bay Area, focused on
+        building sustainable, scalable databases and interfaces.
       </p>
       <div id="navbar" class="coder-gxrl">
-        <a href="#about">/about</a>
-        <a href="#projects">/projects</a>
-        <a href="#resume">/resume</a>
-        <a href="#contact">/contact</a>
+        <a href="#about">
+          <span class="slash">/</span>
+          <div class="nav-label-container">
+            <div class="nav-label">about</div>
+          </div>
+        </a>
+        <a href="#projects">
+          <span class="slash">/</span>
+          <div class="nav-label-container">
+            <div class="nav-label">projects</div>
+          </div>
+        </a>
+        <a href="#resume">
+          <span class="slash">/</span>
+          <div class="nav-label-container">
+            <div class="nav-label">resume</div>
+          </div>
+        </a>
+        <a href="#contact">
+          <span class="slash">/</span>
+          <div class="nav-label-container">
+            <div class="nav-label">contact</div>
+          </div>
+        </a>
       </div>
+
       <div>
         <div class="quick-link">
-          <div class="row">
-            <img src="assets/images/email.png" alt="e-mail icon" />
-            <p>delaneywells@gmail.com</p>
-          </div>
+          <a
+            href="mailto:delaneywells.k@gmail.com?subject=Connecting%20from%20your%20portfolio"
+          >
+            <div class="row">
+              <img src="assets/images/email.png" alt="e-mail icon" />
+              <p>
+                delaneywells.k@gmail.com<i data-feather="arrow-up-right"></i>
+              </p>
+            </div>
+          </a>
         </div>
         <div class="quick-link">
           <a target="_blank" href="https://www.linkedin.com/in/delaneywells/">
             <div class="row">
               <img src="assets/images/linkedin.png" alt="LinkedIn logo" />
-              <p>/in/delaneywells</p>
+              <p>/in/delaneywells<i data-feather="arrow-up-right"></i></p>
             </div>
           </a>
         </div>
         <div class="quick-link">
           <a target="_blank" href="https://github.com/lanewells">
             <div class="row">
-              <img src="assets/images/github-v2.png" alt="GitHub logo" />
-              <p>/lanewells</p>
+              <img src="assets/images/github.png" alt="GitHub logo" />
+              <p>github.com/lanewells<i data-feather="arrow-up-right"></i></p>
             </div>
           </a>
-        </div>
-        <div class="quick-link">
-          <div class="row">
-            <img src="assets/images/phone.png" alt="telephone icon" />
-            <p>424-558-2878</p>
-          </div>
         </div>
       </div>
     </div>
 
     <div id="right-column">
-      <div id="about" class="block-container">
-        <div class="flex-container wrap indent">
+      <div id="about" class="block-container section">
+        <div class="flex-container wrap">
           <p>
-            I'm a versatile and creative <span>Software Engineer</span> with a
-            strong foundation in <span>full-stack development</span> and a
-            background in architecture and design. I am skilled in building
-            dynamic front-end interfaces, RESTful APIs, and scalable databases.
+            I'm a creative and resourceful
+            <span>Full-Stack Software Engineer</span> with a background in
+            architecture, design, and systems thinking. I build thoughtful,
+            scalable software applications that prioritize accessibility,
+            clarity, and human impact.
           </p>
           <p>
-            Passionate about innovation and environmental responsibility, I
-            strive to develop human-centered solutions that blend
-            <span>technology, design, and sustainability.</span> I intend to use
-            technology to drive meaningful change—protecting our planet and its
-            resources while shaping a more <span>sustainable future</span>.
+            Blending technical skills with my artistic mindset, I'm passionate
+            about using technology to drive meaningful change—especially in
+            areas of
+            <span>sustainability, ethical design, and social good</span>.
+          </p>
+          <p>
+            Whether I'm engineering <span>clean backend systems</span> or
+            designing <span>intuitive front-end experiences</span>, I care
+            deeply about making things that work <i>and</i> feel good to use.
+            Curious by nature and quick to learn, I thrive in
+            <span>collaborative environments</span> where ideas flow freely and
+            problem-solving is both technical and creative. Let's create
+            something meaningful—designed with care, <span>built to last</span>,
+            and grounded in what matters to people and the world around us. 🌱
           </p>
         </div>
       </div>
 
-      <div id="technologies" class="block-container">
+      <div id="technologies" class="block-container section">
         <h3 class="coder-gxrl title">
           I have experience with these technologies:
         </h3>
@@ -125,7 +159,7 @@
             <p>Git</p>
           </div>
           <div class="bubble">
-            <img class="tool-icon" src="assets/images/github-v2.png" />
+            <img class="tool-icon" src="assets/images/github.png" />
             <p>GitHub</p>
           </div>
           <div class="bubble">
@@ -158,7 +192,7 @@
         </div>
       </div>
 
-      <div id="projects" class="block-container">
+      <div id="projects" class="block-container section">
         <h3 class="coder-gxrl title">Here is some of my work:</h3>
         <div class="flex-container wrap">
           <div class="card">
@@ -168,14 +202,21 @@
             <div class="flex-column column-justify-left">
               <h2><span class="coder-gxrl">01.</span> Rooted</h2>
               <p>
-                Rooted is a family-centered application where relatives can come
-                together to build a shared digital timeline...
+                Family-centered web app for creating collaborative digital
+                timelines. Upload written memories, share stories, and and
+                celebrate your family's history with relatives across
+                generations. Includes user authentication to keep content
+                private and secure. Built with Python, Django, and PostgreSQL,
+                deployed on Heroku.
               </p>
               <div>
-                <a href="https://rooted-e26962aac72d.herokuapp.com/">
+                <a
+                  target="_blank"
+                  href="https://rooted-e26962aac72d.herokuapp.com/"
+                >
                   Live Site<i data-feather="arrow-up-right"></i>
                 </a>
-                <a href="https://github.com/lanewells/rooted"
+                <a target="_blank" href="https://github.com/lanewells/rooted"
                   >Repository<i data-feather="arrow-up-right"></i
                 ></a>
               </div>
@@ -189,15 +230,23 @@
             <div class="flex-column column-justify-left">
               <h2><span class="coder-gxrl">02.</span> Momento</h2>
               <p>
-                Momento was created so users can send time capsules as a message
-                to their future selves, a loved one, or a shared group...
+                Time capsule app for sending messages, notes, and digital
+                artifacts to your future self—or someone you love. Features
+                scheduled delivery, lockable capsules, and role-based
+                visibility. Built with React, JavaScript, Node/Express, and
+                MongoDB.
               </p>
               <div>
-                <a href="https://momentointime.netlify.app">
+                <a target="_blank" href="https://momentointime.netlify.app">
                   Live Site<i data-feather="arrow-up-right"></i>
                 </a>
-                <a href="https://github.com/lanewells/momento-front-end"
-                  >Repository<i data-feather="arrow-up-right"></i
+                <a
+                  target="_blank"
+                  href="https://github.com/lanewells/momento-front-end"
+                  >Repo (Front end)<i data-feather="arrow-up-right"></i
+                ></a>
+                <a target="_blank" href="https://github.com/lanewells/momento"
+                  >Repo (Backend)<i data-feather="arrow-up-right"></i
                 ></a>
               </div>
             </div>
@@ -210,14 +259,16 @@
             <div class="flex-column column-justify-left">
               <h2><span class="coder-gxrl">03.</span> Hung-Up</h2>
               <p>
-                An application I designed to help beat decision fatigue while
-                getting dressed...
+                Personal wardrobe manager designed to beat decision fatigue. Add
+                clothing items, build outfits, and sort by type to simplify
+                getting ready. Full CRUD backend with JavaScript, Express,
+                MongoDB, and Mongoose, paired with a clean, minimal front end.
               </p>
               <div>
-                <a href="http://www.patience-is-a-virtue.org">
+                <a target="_blank" href="http://www.patience-is-a-virtue.org">
                   Live Site<i data-feather="arrow-up-right"></i>
                 </a>
-                <a href="https://github.com/lanewells/hung-up"
+                <a target="_blank" href="https://github.com/lanewells/hung-up"
                   >Repository<i data-feather="arrow-up-right"></i
                 ></a>
               </div>
@@ -231,14 +282,17 @@
             <div class="flex-column column-justify-left">
               <h2><span class="coder-gxrl">04.</span> Mashed</h2>
               <p>
-                This game is based on the legendary schoolyard game "MASH",
-                which predicts your future...
+                Interactive browser-based take on the classic schoolyard game
+                MASH. Enter potential outcomes, roll a magic number, and let
+                custom-coded game logic reveal your future. Built with vanilla
+                JavaScript, featuring fully programmed mechanics, DOM
+                manipulation, and a responsive UI.
               </p>
               <div>
-                <a href="https://mashed.surge.sh">
+                <a target="_blank" href="https://mashed.surge.sh">
                   Live Site<i data-feather="arrow-up-right"></i>
                 </a>
-                <a href="https://github.com/lanewells/mashed"
+                <a target="_blank" href="https://github.com/lanewells/mashed"
                   >Repository<i data-feather="arrow-up-right"></i
                 ></a>
               </div>
@@ -247,7 +301,7 @@
         </div>
       </div>
 
-      <div id="resume" class="block-container">
+      <div id="resume" class="block-container section">
         <h3 class="coder-gxrl title">
           I have professional experience through:
         </h3>
@@ -294,7 +348,7 @@
         </div>
       </div>
 
-      <div id="contact" class="block-container">
+      <div id="contact" class="block-container section">
         <h1>Contact</h1>
         <div class="flex-container wrap">
           <div class="chip">
@@ -317,7 +371,7 @@
           </div>
           <div class="chip">
             <a href="https://github.com/lanewells">
-              <img class="icon" src="assets/images/github-v2.png" />
+              <img class="icon" src="assets/images/github.png" />
               <p>GitHub</p>
             </a>
           </div>
@@ -334,6 +388,29 @@
     <script src="https://unpkg.com/feather-icons"></script>
     <script>
       feather.replace()
+    </script>
+    <script>
+      const sections = document.querySelectorAll(".section")
+      const navLinks = document.querySelectorAll("#navbar a")
+
+      window.addEventListener("scroll", () => {
+        let current = ""
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop
+          const sectionHeight = section.offsetHeight
+          if (window.scrollY >= sectionTop - sectionHeight / 3) {
+            current = section.getAttribute("id")
+          }
+        })
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active")
+          if (link.getAttribute("href") === `#${current}`) {
+            link.classList.add("active")
+          }
+        })
+      })
     </script>
   </body>
 </html>

@@ -30,6 +30,9 @@ body {
   width: 30vw;
   padding: 5rem 2rem;
   margin-left: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 #right-column {
@@ -46,8 +49,8 @@ a {
 
 h1 {
   color: var(--white-blue);
-  margin-bottom: 40px;
   font-size: 48px;
+  font-weight: 600;
 }
 
 h2 {
@@ -61,18 +64,28 @@ h2 span {
   font-weight: bold;
 }
 
+h3 {
+  font-size: 16px;
+}
+
 p {
   font-size: 16px;
 }
 
+#left-column p,
 #projects p,
-#resume p {
+#resume p,
+#technologies p {
   font-size: 14px;
 }
 
-.indent p {
-  text-indent: 40px;
+#about p {
   line-height: 24px;
+}
+
+#job-title {
+  font-weight: normal;
+  font-size: 20px;
 }
 
 .title {
@@ -91,6 +104,53 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: left;
+  width: 70%;
+  line-height: 1.75rem;
+}
+
+#navbar a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  text-decoration: none;
+}
+
+#navbar .slash {
+  flex-shrink: 0;
+  color: var(--accent-opaque);
+  font-weight: normal;
+  font-size: 16px;
+}
+
+#navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  line-height: 1.75rem;
+}
+
+.nav-label-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#navbar .nav-label {
+  display: inline-block;
+  width: 100%;
+  transition: transform 0.3s ease, letter-spacing 0.2s ease;
+}
+
+#navbar a:hover .nav-label {
+  transform: translateX(10px);
+  letter-spacing: 0.1em;
+}
+
+#navbar a.active .nav-label {
+  transform: translateX(100%);
+  letter-spacing: normal;
 }
 
 #resume a {
@@ -186,6 +246,10 @@ p {
   color: var(--light-blue);
 }
 
+.quick-link {
+  width: 70%;
+}
+
 .quick-link .row {
   display: flex;
   flex-direction: row;
@@ -193,12 +257,9 @@ p {
 }
 
 .quick-link img {
-  width: 25px;
-  margin: 5px;
-}
-
-#scroll-icon {
-  margin-top: 100px;
+  min-width: 15px;
+  width: 1.2rem;
+  margin: 8px;
 }
 
 .bubble-container {
@@ -290,9 +351,10 @@ footer a {
 }
 
 span {
-  font-weight: bolder;
-  font-size: 22px;
+  font-weight: 600;
+  font-size: 18px;
   color: var(--white-blue);
+  letter-spacing: 0.04em;
 }
 
 svg.feather {
@@ -308,6 +370,18 @@ svg.feather {
 a:hover svg.feather {
   transform: translateX(4px) rotate(3deg);
   stroke: var(--accent-opaque);
+}
+
+.quick-link a:hover {
+  color: var(--white-blue);
+}
+
+.quick-link svg.feather {
+  stroke: var(--light-blue);
+}
+
+.quick-link a:hover svg.feather {
+  stroke: var(--white-blue);
 }
 
 #projects a {
