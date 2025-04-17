@@ -96,9 +96,15 @@ p {
   margin-bottom: 4rem;
 }
 
-#resume h3 {
+#resume .flex-container h2 {
   font-size: 24px;
-  font-weight: normal;
+  font-weight: 500;
+}
+
+#resume .flex-container h3 {
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--white-blue);
 }
 
 .coder-gxrl {
@@ -160,10 +166,6 @@ p {
 
 #resume a {
   margin: 10px auto 10px 0px;
-}
-
-#contact a {
-  color: var(--light-blue);
 }
 
 .block-container,
@@ -304,6 +306,52 @@ p {
   transform: scale(1.2);
 }
 
+.hobbies-section {
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hobbies-text {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.hobbies-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+  grid-auto-rows: 180px;
+  grid-auto-flow: dense;
+}
+
+.photo {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  grid-row: span 1;
+  border-radius: 5px;
+  border: 3px solid var(--accent-translucent);
+}
+
+.photo.tall {
+  grid-row: span 2;
+}
+
+.photo.wide {
+  grid-column: span 2;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background-color: #8498bd;
+}
+
 #skills {
   margin-top: 50px;
 }
@@ -395,6 +443,10 @@ a:hover svg.feather {
 
 .quick-link a:hover svg.feather {
   stroke: var(--white-blue);
+}
+
+#resume .sublabel {
+  font-size: 16px;
 }
 
 #projects a,
