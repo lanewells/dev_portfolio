@@ -81,6 +81,7 @@ p {
 
 #about p {
   line-height: 24px;
+  padding-top: 15px;
 }
 
 #job-title {
@@ -90,10 +91,22 @@ p {
 
 .title {
   margin-bottom: 3rem;
+  padding-top: 20px;
 }
 
 #projects .title {
   margin-bottom: 4rem;
+}
+
+#resume .flex-container h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+#resume .flex-container h3 {
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--white-blue);
 }
 
 .coder-gxrl {
@@ -104,7 +117,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: left;
-  width: 70%;
+  width: 100%;
   line-height: 1.75rem;
 }
 
@@ -112,7 +125,7 @@ p {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  width: 100%;
+  width: 75%;
   text-decoration: none;
 }
 
@@ -121,14 +134,6 @@ p {
   color: var(--accent-opaque);
   font-weight: normal;
   font-size: 16px;
-}
-
-#navbar {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  line-height: 1.75rem;
 }
 
 .nav-label-container {
@@ -144,21 +149,22 @@ p {
 }
 
 #navbar a:hover .nav-label {
-  transform: translateX(10px);
-  letter-spacing: 0.1em;
+  transform: translateX(30px);
+  letter-spacing: 0.2em;
 }
 
 #navbar a.active .nav-label {
-  transform: translateX(100%);
+  transform: translateX(80%);
   letter-spacing: normal;
+  font-weight: bolder;
+}
+
+#navbar a.active .nav-label.projects {
+  transform: translateX(70%);
 }
 
 #resume a {
   margin: 10px auto 10px 0px;
-}
-
-#contact a {
-  color: var(--light-blue);
 }
 
 .block-container,
@@ -176,16 +182,13 @@ p {
   display: flex;
   gap: 30px;
   flex-direction: row;
-}
-
-#projects .flex-container {
-  gap: 75px;
-}
-
-.flex-row {
-  display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  width: 100%;
+}
+
+#projects .flex-container,
+#resume .flex-container {
+  gap: 75px;
 }
 
 .card {
@@ -221,18 +224,29 @@ p {
   min-width: 200px;
 }
 
-.flex-container {
-  flex-wrap: wrap;
-  width: 100%;
-}
-
 .flex-row {
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
 }
 
 .flex-column {
+  display: flex;
+  flex-direction: column;
   width: 100%;
+}
+
+.column-justify-right {
+  flex: 1;
+}
+
+#resume .column-justify-right p {
+  padding-top: 5px;
+}
+
+.column-justify-left {
+  flex: 3;
 }
 
 .column-small,
@@ -291,17 +305,65 @@ p {
   transform: scale(1.2);
 }
 
+.hobbies-section {
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hobbies-text {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.hobbies-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+  grid-auto-rows: 180px;
+  grid-auto-flow: dense;
+}
+
+.photo {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  grid-row: span 1;
+  border-radius: 5px;
+  border: 3px solid var(--accent-translucent);
+}
+
+.photo.tall {
+  grid-row: span 2;
+}
+
+.photo.wide {
+  grid-column: span 2;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background-color: #8498bd;
+}
+
 #skills {
   margin-top: 50px;
+}
+
+#more {
+  margin-bottom: 4rem;
 }
 
 footer a {
   display: inline-block;
   text-align: center;
-  margin: auto 20px;
-  padding: 14px;
-  width: 120px;
-  height: 15px;
+  width: 100%;
+  margin: 0 auto 20px auto;
   color: var(--light-blue);
 }
 
@@ -384,11 +446,19 @@ a:hover svg.feather {
   stroke: var(--white-blue);
 }
 
-#projects a {
+#resume .sublabel {
+  font-size: 16px;
+}
+
+#projects a,
+#resume a,
+footer a {
   color: var(--accent-translucent);
 }
 
-#projects a:hover {
+#projects a:hover,
+#resume a:hover,
+footer a:hover {
   color: var(--accent-opaque);
 }
 
