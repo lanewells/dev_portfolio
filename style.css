@@ -163,6 +163,10 @@ p {
   transform: translateX(70%);
 }
 
+#navbar a.active .nav-label.resume {
+  transform: translateX(75%);
+}
+
 #resume a {
   margin: 10px auto 10px 0px;
 }
