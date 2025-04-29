@@ -79,6 +79,11 @@ p {
   font-size: 14px;
 }
 
+#projects a span {
+  font-size: 11px;
+  font-weight: 400;
+}
+
 #about p {
   line-height: 24px;
   padding-top: 15px;
@@ -265,7 +270,7 @@ p {
 }
 
 .quick-link {
-  width: 70%;
+  width: 75%;
 }
 
 .quick-link .row {
@@ -452,12 +457,14 @@ a:hover svg.feather {
 }
 
 #projects a,
+#projects a span,
 #resume a,
 footer a {
   color: var(--accent-translucent);
 }
 
 #projects a:hover,
+#projects a span:hover,
 #resume a:hover,
 footer a:hover {
   color: var(--accent-opaque);
