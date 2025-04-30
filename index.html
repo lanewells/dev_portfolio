@@ -8,43 +8,48 @@
   </head>
   <body>
     <div id="left-column">
-      <div>
-        <h3 class="coder-gxrl">Hi, my name is</h3>
-        <h1>Delaney Wells</h1>
-        <h1 id="job-title">Software Engineer</h1>
+      <div id="name-title-container">
+        <div>
+          <h3 class="coder-gxrl">Hi, my name is</h3>
+          <h1>Delaney Wells</h1>
+          <h1 id="job-title">Software Engineer</h1>
+        </div>
+        <p>
+          Full-stack developer based in the San Francisco Bay Area, focused on
+          building sustainable, scalable databases and interfaces.
+        </p>
       </div>
-      <p>
-        Full-stack developer based in the San Francisco Bay Area, focused on
-        building sustainable, scalable databases and interfaces.
-      </p>
       <div id="navbar" class="coder-gxrl">
-        <a href="#about">
+        <a class="justify-right" href="#about">
           <span class="slash">/</span>
           <div class="nav-label-container">
-            <div class="nav-label">about</div>
+            <div class="nav-label about">about</div>
           </div>
         </a>
-        <a href="#projects">
+        <div class="responsive-slash">/</div>
+        <a id="projects-nav" href="#projects">
           <span class="slash">/</span>
           <div class="nav-label-container">
             <div class="nav-label projects">projects</div>
           </div>
         </a>
+        <div class="responsive-slash">/</div>
         <a href="#resume">
           <span class="slash">/</span>
           <div class="nav-label-container">
             <div class="nav-label resume">resume</div>
           </div>
         </a>
-        <a href="#more">
+        <div class="responsive-slash">/</div>
+        <a class="justify-left" href="#more">
           <span class="slash">/</span>
-          <div class="nav-label-container">
+          <div class="nav-label-container more">
             <div class="nav-label">more</div>
           </div>
         </a>
       </div>
 
-      <div>
+      <div id="quick-link-container">
         <div class="quick-link">
           <a
             href="mailto:delaneywells.k@gmail.com?subject=Connecting%20from%20your%20portfolio"
@@ -90,6 +95,10 @@
     <div id="right-column">
       <div id="about" class="block-container section">
         <div class="flex-container wrap">
+          <p class="responsive-paragraph coder-gxrl">
+            Developer based in the San Francisco Bay Area, focused on building
+            sustainable, scalable databases and interfaces.
+          </p>
           <p>
             I'm a creative and resourceful
             <span>Full-Stack Software Engineer</span> with a background in
