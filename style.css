@@ -79,10 +79,6 @@ p {
   font-size: 14px;
 }
 
-#name-title-container p {
-  margin-top: 10%;
-}
-
 #projects a span {
   font-size: 11px;
   font-weight: 400;
@@ -96,6 +92,7 @@ p {
 #job-title {
   font-weight: normal;
   font-size: 20px;
+  margin: -10px auto 50px auto;
 }
 
 .title {
@@ -107,7 +104,8 @@ p {
   display: none;
 }
 
-#projects .title {
+#projects .title,
+#more .title {
   margin-bottom: 4rem;
 }
 
@@ -215,7 +213,7 @@ p {
 .card {
   display: flex;
   flex-direction: row;
-  gap: 15px;
+  gap: 20px;
 }
 
 .card div div {
@@ -262,7 +260,8 @@ p {
   flex: 1;
 }
 
-#resume .column-justify-right p {
+#resume .column-justify-right p,
+#projects .flex-column.column-justify-right {
   padding-top: 5px;
 }
 
@@ -343,6 +342,7 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   gap: 3rem 4rem;
+  margin-top: 3rem;
 }
 
 .photo {
@@ -373,10 +373,6 @@ p {
   margin-top: 50px;
 }
 
-#more {
-  margin-bottom: 4rem;
-}
-
 footer a {
   display: inline-block;
   text-align: center;
@@ -400,6 +396,7 @@ footer a {
   height: 100px;
   border-radius: 5px;
   border: 3px solid var(--accent-translucent);
+  margin-right: 20px;
 }
 
 .thumbnail img {
@@ -482,7 +479,7 @@ footer a:hover {
   color: var(--accent-opaque);
 }
 
-@media (max-width: 1335px) {
+@media (max-width: 1360px) {
   #navbar a.active .nav-label {
     transform: translateX(60%);
   }
@@ -493,6 +490,14 @@ footer a:hover {
 
   #navbar a.active .nav-label.resume {
     transform: translateX(50%);
+  }
+
+  #name-title-container h1 {
+    font-size: 36px;
+  }
+
+  #name-title-container #job-title {
+    font-size: 20px;
   }
 
   .quick-link {
@@ -515,7 +520,7 @@ footer a:hover {
   }
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1072px) {
   body {
     flex-direction: column;
   }
@@ -546,6 +551,10 @@ footer a:hover {
     margin: 110px 0 0 0;
   }
 
+  .section {
+    scroll-margin-top: 100px;
+  }
+
   #left-column #name-title-container {
     flex: 1;
     justify-content: flex-start;
@@ -569,7 +578,11 @@ footer a:hover {
   }
 
   .coder-gxrl {
-    font-size: 12px;
+    font-size: 14px;
+  }
+
+  #job-title {
+    margin: auto;
   }
 
   #navbar {
@@ -635,6 +648,14 @@ footer a:hover {
     padding-left: 1px;
   }
 
+  .thumbnail {
+    width: 170px;
+    height: 120px;
+    border-radius: 5px;
+    border: 3px solid var(--accent-translucent);
+    margin-right: 20px;
+  }
+
   #quick-link-container {
     display: flex;
     flex-direction: row;
@@ -666,10 +687,86 @@ footer a:hover {
     height: 20px;
     margin: 0 0 0 10px;
   }
+
+  .hobbies-gallery {
+    margin-top: 4rem;
+  }
 }
 
 @media (max-width: 768px) {
-  body {
-    background-color: pink;
+  #left-column {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--dark-blue);
+    z-index: 1000;
+    border-bottom: 1px solid var(--light-blue);
+    height: 60px;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 18px;
+    cursor: pointer;
+  }
+
+  .hamburger div {
+    width: 24px;
+    height: 3px;
+    background-color: var(--accent-opaque);
+    border-radius: 2px;
+  }
+
+  #navbar {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: var(--dark-blue);
+    border-bottom: 1px solid var(--light-blue);
+    z-index: 999;
+    padding: 1rem 0;
+  }
+
+  #navbar.open {
+    display: flex;
+  }
+
+  #navbar a {
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 16px;
+    border-top: 1px solid var(--light-blue);
+  }
+
+  .responsive-slash,
+  #quick-link-container,
+  #name-title-container p,
+  #name-title-container h3 {
+    display: none;
+  }
+
+  #right-column {
+    margin-top: 60px;
+    padding: 2rem 1rem;
+  }
+
+  #job-title {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+
+  .coder-gxrl {
+    font-size: 14px;
   }
 }

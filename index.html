@@ -8,6 +8,12 @@
   </head>
   <body>
     <div id="left-column">
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
       <div id="name-title-container">
         <div>
           <h3 class="coder-gxrl">Hi, my name is</h3>
@@ -99,7 +105,7 @@
             Developer based in the San Francisco Bay Area, focused on building
             sustainable, scalable databases and interfaces.
           </p>
-          <p>
+          <p id="first-p-desktop">
             I'm a creative and resourceful
             <span>Full-Stack Software Engineer</span> with a background in
             architecture, design, and systems thinking. I build thoughtful,
@@ -215,10 +221,13 @@
       <div id="projects" class="block-container section">
         <h3 class="coder-gxrl title">Here's some of my work:</h3>
         <div class="flex-container wrap">
-          <div class="card">
-            <div class="thumbnail">
-              <img src="assets/images/rooted.png" />
+          <div class="flex-row">
+            <div class="flex-column column-justify-right">
+              <div class="thumbnail">
+                <img src="assets/images/rooted.png" />
+              </div>
             </div>
+
             <div class="flex-column column-justify-left">
               <h2><span class="coder-gxrl">01.</span> Rooted</h2>
               <p>
@@ -242,11 +251,13 @@
             </div>
           </div>
 
-          <div class="card">
-            <div class="thumbnail">
-              <img src="assets/images/hung-up.png" />
+          <div class="flex-row">
+            <div class="flex-column column-justify-right">
+              <div class="thumbnail">
+                <img src="assets/images/hung-up.png" />
+              </div>
             </div>
-            <div class="flex-column">
+            <div class="flex-column column-justify-left">
               <h2><span class="coder-gxrl">02.</span> Hung-Up</h2>
               <p>
                 Personal wardrobe manager designed to beat decision fatigue. Add
@@ -265,11 +276,13 @@
             </div>
           </div>
 
-          <div class="card">
-            <div class="thumbnail">
-              <img src="assets/images/mashed-empty.png" />
+          <div class="flex-row">
+            <div class="flex-column column-justify-right">
+              <div class="thumbnail">
+                <img src="assets/images/mashed-empty.png" />
+              </div>
             </div>
-            <div class="flex-column">
+            <div class="flex-column column-justify-left">
               <h2><span class="coder-gxrl">03.</span> Mashed</h2>
               <p>
                 Interactive browser-based take on the classic schoolyard game
@@ -289,10 +302,13 @@
             </div>
           </div>
 
-          <div class="card">
-            <div class="thumbnail">
-              <img src="assets/images/momento.jpg" />
+          <div class="flex-row">
+            <div class="flex-column column-justify-right">
+              <div class="thumbnail">
+                <img src="assets/images/momento.jpg" />
+              </div>
             </div>
+
             <div class="flex-column column-justify-left">
               <h2><span class="coder-gxrl">04.</span> Momento</h2>
               <p>
@@ -465,8 +481,7 @@
     <script src="https://unpkg.com/feather-icons"></script>
     <script>
       feather.replace()
-    </script>
-    <script>
+
       const sections = document.querySelectorAll(".section")
       const navLinks = document.querySelectorAll("#navbar a")
 
@@ -486,6 +501,16 @@
           if (link.getAttribute("href") === `#${current}`) {
             link.classList.add("active")
           }
+        })
+      })
+
+      function toggleMenu() {
+        document.getElementById("navbar").classList.toggle("open")
+      }
+
+      document.querySelectorAll("#navbar a").forEach((link) => {
+        link.addEventListener("click", () => {
+          document.getElementById("navbar").classList.remove("open")
         })
       })
     </script>
