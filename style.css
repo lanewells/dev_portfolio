@@ -96,7 +96,7 @@ p {
 #job-title {
   font-weight: normal;
   font-size: 20px;
-  margin: -10px auto 50px auto;
+  margin: -10px auto 20px auto;
 }
 
 .title {
@@ -134,6 +134,7 @@ p {
   justify-content: left;
   width: 100%;
   line-height: 1.75rem;
+  margin-top: 1rem;
 }
 
 #navbar a {
@@ -438,7 +439,8 @@ span {
   letter-spacing: 0.04em;
 }
 
-svg.feather {
+svg.feather,
+#resume .quick-link svg.feather {
   width: 18px;
   height: 18px;
   margin-left: 0.2rem;
@@ -448,7 +450,8 @@ svg.feather {
   transition: transform 0.2s ease;
 }
 
-a:hover svg.feather {
+a:hover svg.feather,
+#resume .quick-link a:hover svg.feather {
   transform: translateX(4px) rotate(3deg);
   stroke: var(--accent-opaque);
 }
@@ -496,11 +499,11 @@ footer a:hover {
     transform: translateX(50%);
   }
 
-  #name-title-container h1 {
+  #my-name {
     font-size: 36px;
   }
 
-  #name-title-container #job-title {
+  #job-title {
     font-size: 20px;
   }
 
@@ -570,23 +573,20 @@ footer a:hover {
     text-align: center;
   }
 
-  #left-column h1 {
+  #my-name {
     font-size: 22px;
     font-weight: 500;
   }
 
-  #left-column #job-title {
+  #job-title {
     font-size: 14px;
     font-weight: 300;
     line-height: 12px;
+    margin: auto;
   }
 
   .coder-gxrl {
     font-size: 14px;
-  }
-
-  #job-title {
-    margin: auto;
   }
 
   #navbar {
@@ -703,7 +703,7 @@ footer a:hover {
     z-index: 1000;
     border-bottom: 1px solid var(--light-blue);
     height: auto;
-    gap: 20px;
+    gap: 15px;
   }
 
   #right-column {
@@ -817,15 +817,24 @@ footer a:hover {
     flex-grow: 1;
   }
 
+  #my-name {
+    font-size: 18px;
+  }
+
+  #job-title {
+    font-size: 12px;
+    line-height: 4px;
+  }
+
   .nav-label {
     width: auto;
     text-align: left;
   }
 
   .quick-link img {
-    width: 15px;
-    height: 15px;
-    margin: 0 0 0 5px;
+    width: 20px;
+    height: 20px;
+    margin: 0 0 0 3px;
   }
 
   .coder-gxrl {
@@ -834,5 +843,15 @@ footer a:hover {
 
   .block-container {
     margin-bottom: 4rem;
+  }
+
+  .thumbnail {
+    width: 100%;
+    height: 200px;
+  }
+
+  .flex-row {
+    flex-direction: column;
+    gap: 15px;
   }
 }
