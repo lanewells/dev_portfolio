@@ -250,6 +250,10 @@ p {
   width: 100%;
 }
 
+#projects .flex-row {
+  gap: 20px;
+}
+
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -844,6 +848,10 @@ footer a:hover {
 
   .flex-row {
     flex-direction: column;
+  }
+
+  .flex-row,
+  #projects .flex-row {
     gap: 15px;
   }
 }
