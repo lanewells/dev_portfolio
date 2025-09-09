@@ -429,6 +429,22 @@ footer a {
   width: 50px;
 }
 
+.oval-container {
+  display: inline-flex;
+  gap: 10px;
+  padding: 5px 0;
+  flex-wrap: wrap;
+}
+
+.oval {
+  text-wrap: nowrap;
+  padding: 0 10px;
+  border-radius: 12px;
+  background-color: var(--light-blue);
+  color: var(--dark-blue);
+  font-weight: 600;
+}
+
 span {
   font-weight: 600;
   font-size: 18px;
