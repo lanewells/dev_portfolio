@@ -9,8 +9,8 @@
   --dark-blue: #121d3d;
   --white-blue: #e2e8f0;
   --light-blue: #8498bd;
-  --accent-opaque: #4dbdc2;
-  --accent-translucent: #4dbcc29f;
+  --accent-opaque: #50d8df;
+  --accent-translucent: #49c7cecd;
   --main-font: "Poppins", "Arial", "Helvetica", sans-serif;
   --secondary-font: "JetBrains Mono", "Courier New", monospace;
 }
@@ -407,6 +407,10 @@ footer a {
   display: block;
 }
 
+#projects .thumbnail:hover {
+  border-color: var(--accent-opaque);
+}
+
 .vertical-text {
   writing-mode: sideways-lr;
   margin: auto 10px;
@@ -497,6 +501,17 @@ footer a {
 #resume a:hover,
 footer a:hover {
   color: var(--accent-opaque);
+}
+
+.links-full-size {
+  width: 100%;
+  padding: 15px 0;
+  text-align: right;
+  line-height: 1.8;
+}
+
+.links-mobile-size {
+  display: none;
 }
 
 @media (max-width: 1360px) {
@@ -688,6 +703,12 @@ footer a:hover {
   .hobbies-gallery {
     margin-top: 4rem;
   }
+
+  .links-full-size {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 @media (max-width: 768px) {
@@ -869,5 +890,23 @@ footer a:hover {
   .flex-row,
   #projects .flex-row {
     gap: 15px;
+  }
+
+  .links-full-size {
+    display: none;
+  }
+
+  .links-mobile-size {
+    display: inline-flex;
+    font-size: 18px;
+    gap: 20px;
+  }
+
+  #projects .flex-column > p {
+    font-size: 1rem;
+  }
+
+  #projects .column-justify-left {
+    gap: 10px;
   }
 }
