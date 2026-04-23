@@ -1,9 +1,14 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" id="top">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Delaney Wells SWE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Delaney Wells | Software Engineer</title>
+    <meta
+      name="description"
+      content="Full-Stack Software Engineer (React, TypeScript, Node.js, Python, Express, Django, PostgreSQL). Featured projects: Hung-Up, Filter Builder, Rooted, Mashed."
+    />
+
     <link rel="stylesheet" href="style.css" />
     <link
       rel="apple-touch-icon"
@@ -24,616 +29,508 @@
     />
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
   </head>
+
   <body>
-    <div id="left-column">
-      <div class="hamburger" onclick="toggleMenu()">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-      <div id="name-title-container">
-        <div>
-          <h3 class="coder-gxrl">Hi, my name is</h3>
-          <h1 id="my-name">Delaney Wells</h1>
-          <h1 id="job-title">Software Engineer</h1>
-        </div>
-        <p>
-          Full-stack developer based in the San Francisco Bay Area, focused on
-          building sustainable, scalable databases and interfaces.
-        </p>
-      </div>
-      <div id="navbar" class="coder-gxrl">
-        <a href="#about">
-          <span class="slash">/</span>
-          <div class="nav-label-container">
-            <div class="nav-label about">about</div>
-          </div>
-        </a>
-        <div class="responsive-slash">/</div>
-        <a id="projects-nav" href="#projects">
-          <span class="slash">/</span>
-          <div class="nav-label-container">
-            <div class="nav-label projects">projects</div>
-          </div>
-        </a>
-        <div class="responsive-slash">/</div>
-        <a href="#resume">
-          <span class="slash">/</span>
-          <div class="nav-label-container">
-            <div class="nav-label resume">resume</div>
-          </div>
-        </a>
-        <div class="responsive-slash">/</div>
-        <a href="#more">
-          <span class="slash">/</span>
-          <div class="nav-label-container">
-            <div class="nav-label more">more</div>
-          </div>
-        </a>
-      </div>
+    <header class="shell">
+      <div class="sidebar" aria-label="Primary sidebar">
+        <div class="identity">
+          <p class="eyebrow coder">hi, my name is</p>
+          <h1 class="name">Delaney Wells</h1>
+          <p class="role">Software Engineer</p>
 
-      <div id="quick-link-container">
-        <div class="quick-link">
-          <a target="_blank" href="assets/files/DelaneyWells_Resume.pdf">
-            <div class="row">
-              <img src="assets/images/resume.png" alt="GitHub logo" />
-              <p>View my resume<i data-feather="arrow-up-right"></i></p>
-            </div>
-          </a>
-        </div>
-        <div class="quick-link">
-          <a
-            href="mailto:delaneywells.k@gmail.com?subject=Connecting%20from%20your%20portfolio"
-          >
-            <div class="row">
-              <img src="assets/images/email.png" alt="e-mail icon" />
-              <p>
-                delaneywellsk@gmail.com<i data-feather="arrow-up-right"></i>
-              </p>
-            </div>
-          </a>
-        </div>
-        <div class="quick-link">
-          <a target="_blank" href="https://www.linkedin.com/in/delaneywells/">
-            <div class="row">
-              <img src="assets/images/linkedin.png" alt="LinkedIn logo" />
-              <p>/in/delaneywells<i data-feather="arrow-up-right"></i></p>
-            </div>
-          </a>
-        </div>
-        <div class="quick-link">
-          <a target="_blank" href="https://github.com/lanewells">
-            <div class="row">
-              <img src="assets/images/github.png" alt="GitHub logo" />
-              <p>github.com/lanewells<i data-feather="arrow-up-right"></i></p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div id="right-column">
-      <div id="about" class="block-container section">
-        <div class="flex-container wrap">
-          <p class="responsive-paragraph coder-gxrl">
-            Developer based in the San Francisco Bay Area, focused on building
-            sustainable, scalable databases and interfaces.
+          <p class="hero">
+            Full-Stack Software Engineer working with React,
+            TypeScript/JavaScript, Node, and Python.
           </p>
-          <p id="first-p-desktop">
-            I'm a creative and resourceful
-            <span>Full-Stack Software Engineer</span> with a background in
-            architecture, design, and systems thinking. I build thoughtful,
-            scalable software applications that prioritize accessibility,
-            clarity, and human impact.
-          </p>
-          <p>
-            Blending technical skills with my artistic mindset, I'm passionate
-            about using technology to drive meaningful change—especially in
-            areas of
-            <span>sustainability, ethical design, and social good</span>.
-          </p>
-          <p>
-            Whether I'm engineering <span>clean backend systems</span> or
-            designing <span>intuitive front-end experiences</span>, I care
-            deeply about making things that work <i>and</i> feel good to use.
-            Curious by nature and quick to learn, I thrive in
-            <span>collaborative environments</span> where ideas flow freely and
-            problem-solving is both technical and creative. Let's create
-            something meaningful—designed with care, <span>built to last</span>,
-            and grounded in what matters to people and the world around us. 🌱
-          </p>
-        </div>
-      </div>
 
-      <div id="technologies" class="block-container section">
-        <h3 class="coder-gxrl title">
-          I have experience with these technologies:
-        </h3>
-        <div class="bubble-container">
-          <div class="bubble">
-            <img class="tool-icon" src="assets/images/python.png" />
-            <p>Python</p>
-          </div>
-          <div class="bubble">
-            <img class="tool-icon" src="assets/images/react.png" />
-            <p>React.js</p>
-          </div>
-          <div class="bubble">
-            <img class="tool-icon" src="assets/images/javascript.png" />
-            <p>JavaScript</p>
-          </div>
-          <div class="bubble">
-            <img class="tool-icon" src="assets/images/javascript.png" />
-            <p>TypeScript</p>
-          </div>
-          <div class="bubble">
-            <img class="tool-icon" src="assets/images/sql.png" />
-            <p>SQL</p>
-          </div>
-          <div class="bubble">
-            <img class="tool-icon" src="assets/images/postgresql.png" />
-            <p>PostgreSQL</p>
-          </div>
-          <div class="bubble">
-            <img class="tool-icon" src="assets/images/mongodb.png" />
-            <p>MongoDB</p>
-          </div>
-          <div class="bubble">
-            <img class="tool-icon" src="assets/images/mongoose.js.png" />
-            <p>Mongoose</p>
-          </div>
-          <div class="bubble">
-            <img class="tool-icon" src="assets/images/django.png" />
-            <p>Django</p>
-          </div>
-          <div class="bubble">
-            <img class="tool-icon" src="assets/images/express.js.png" />
-            <p>Express.js</p>
-          </div>
-          <div class="bubble">
-            <img class="tool-icon" src="assets/images/node.js.png" />
-            <p>Node.js</p>
-          </div>
-          <div class="bubble">
-            <img class="tool-icon" src="assets/images/html.png" />
-            <p>HTML</p>
-          </div>
-          <div class="bubble">
-            <img class="tool-icon" src="assets/images/css.png" />
-            <p>CSS</p>
-          </div>
-          <div class="bubble">
-            <img class="tool-icon" src="assets/images/heroku.png" />
-            <p>Heroku</p>
-          </div>
-          <div class="bubble">
-            <img class="tool-icon" src="assets/images/render.png" />
-            <p>Render</p>
-          </div>
-          <div class="bubble">
-            <img class="tool-icon" src="assets/images/cloudinary.png" />
-            <p>Cloudinary</p>
-          </div>
-          <div class="bubble">
-            <img class="tool-icon" src="assets/images/atlas.png" />
-            <p>Atlas</p>
-          </div>
-          <div class="bubble">
-            <img class="tool-icon" src="assets/images/git.png" />
-            <p>Git</p>
-          </div>
-          <div class="bubble">
-            <img class="tool-icon" src="assets/images/github.png" />
-            <p>GitHub</p>
-          </div>
-        </div>
-        <h3 id="skills" class="coder-gxrl title">I am also skilled in:</h3>
-        <div class="bubble-container">
-          <div class="bubble">
-            <img class="tool-icon" src="assets/images/rest-apis.png" />
-            <p>RESTful APIs</p>
-          </div>
-          <div class="bubble">
-            <img class="tool-icon" src="assets/images/agile.png" />
-            <p>Agile</p>
-          </div>
-          <div class="bubble">
-            <img class="tool-icon" src="assets/images/git-workflow.png" />
-            <p>Git Workflow</p>
-          </div>
-          <div class="bubble">
-            <img class="tool-icon" src="assets/images/oop.png" />
-            <p>Object-Oriented Programming</p>
-          </div>
-        </div>
-      </div>
-
-      <div id="projects" class="block-container section">
-        <h3 class="coder-gxrl title">Here's some of my work:</h3>
-        <div class="flex-container wrap">
-          <div class="flex-row">
-            <div class="flex-column column-justify-right">
-              <a target="_blank" href="https://hung-up-demo.delaneywells.dev">
-                <div class="thumbnail">
-                  <img src="assets/images/hung-up-thumbnail.png" />
-                </div>
-              </a>
-              <div class="links-full-size">
-                <a target="_blank" href="https://hung-up-demo.delaneywells.dev">
-                  Live Demo<i data-feather="arrow-up-right"></i>
-                </a>
-                <a
-                  target="_blank"
-                  href="https://github.com/lanewells/hung-up-react"
-                  >Repository<i data-feather="arrow-up-right"></i
-                ></a>
-              </div>
-            </div>
-            <div class="flex-column column-justify-left">
-              <h2><span class="coder-gxrl">01.</span> Hung-Up</h2>
-              <div class="oval-container">
-                <div class="oval"><p>JavaScript</p></div>
-                <div class="oval"><p>React</p></div>
-                <div class="oval"><p>Node.js</p></div>
-                <div class="oval"><p>Express</p></div>
-                <div class="oval"><p>MongoDB Atlas</p></div>
-                <div class="oval"><p>Mongoose</p></div>
-                <div class="oval"><p>SCSS Modules</p></div>
-                <div class="oval"><p>Cloudinary</p></div>
-                <div class="oval"><p>Render</p></div>
-              </div>
-              <p>
-                Full-stack digital wardrobe app built with React, Express, and
-                MongoDB, allowing users to organize, rate, and visualize outfits
-                with live updates. Features a RESTful API with CRUD operations,
-                Cloudinary image uploads, and modular controller architecture
-                for scalability and performance. Styled with responsive SCSS and
-                deployed as a monorepo on Render with environment variables and
-                build automation for seamless client-server integration.
-              </p>
-              <div class="links-mobile-size">
-                <a target="_blank" href="https://hung-up-demo.delaneywells.dev">
-                  Live Demo<i data-feather="arrow-up-right"></i>
-                </a>
-                <a
-                  target="_blank"
-                  href="https://github.com/lanewells/hung-up-react"
-                  >Repository<i data-feather="arrow-up-right"></i
-                ></a>
-              </div>
-            </div>
+          <div class="cta-row">
+            <a
+              class="btn primary"
+              href="assets/files/DelaneyWells_Resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Resume <i data-feather="arrow-up-right"></i>
+            </a>
+            <a
+              class="btn primary"
+              href="mailto:delaneywells.k@gmail.com?subject=Connecting%20from%20your%20portfolio"
+            >
+              Email <i data-feather="arrow-up-right"></i>
+            </a>
           </div>
 
-          <div class="flex-row">
-            <div class="flex-column column-justify-right">
-              <a target="_blank" href="https://filter-builder.delaneywells.dev">
-                <div class="thumbnail">
-                  <img src="assets/images/screenshot-default.jpg" />
-                </div>
-              </a>
-              <div class="links-full-size">
-                <a
-                  target="_blank"
-                  href="https://filter-builder.delaneywells.dev"
-                >
-                  Live Demo<i data-feather="arrow-up-right"></i>
-                </a>
-                <a
-                  target="_blank"
-                  href="https://github.com/lanewells/hung-up-filter-builder-ts"
-                  >Repository<i data-feather="arrow-up-right"></i
-                ></a>
-              </div>
-            </div>
-            <div class="flex-column column-justify-left">
-              <h2>
-                <span class="coder-gxrl">02.</span> Wardrobe Filter Builder
-              </h2>
-              <div class="oval-container">
-                <div class="oval"><p>JavaScript</p></div>
-                <div class="oval"><p>TypeScript</p></div>
-                <div class="oval"><p>React</p></div>
-              </div>
-              <p>
-                React and TypeScript demo built as a companion to my full stack
-                app, Hung-Up. It simulates a realistic product feature where
-                users can filter, sort, and save presets to browse through their
-                wardrobe.
-              </p>
-              <div class="links-mobile-size">
-                <a
-                  target="_blank"
-                  href="https://filter-builder.delaneywells.dev"
-                >
-                  Live Demo<i data-feather="arrow-up-right"></i>
-                </a>
-                <a
-                  target="_blank"
-                  href="https://github.com/lanewells/hung-up-filter-builder-ts"
-                  >Repository<i data-feather="arrow-up-right"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="flex-row">
-            <div class="flex-column column-justify-right">
-              <a
-                target="_blank"
-                href="https://rooted-e26962aac72d.herokuapp.com/"
-              >
-                <div class="thumbnail">
-                  <img src="assets/images/rooted-thumbnail.jpg" />
-                </div>
-              </a>
-              <div class="links-full-size">
-                <a
-                  target="_blank"
-                  href="https://rooted-e26962aac72d.herokuapp.com/"
-                >
-                  Live Demo<i data-feather="arrow-up-right"></i>
-                </a>
-                <a target="_blank" href="https://github.com/lanewells/rooted"
-                  >Repository<i data-feather="arrow-up-right"></i
-                ></a>
-              </div>
-            </div>
-            <div class="flex-column column-justify-left">
-              <h2><span class="coder-gxrl">03.</span> Rooted</h2>
-              <div class="oval-container">
-                <div class="oval"><p>Python</p></div>
-                <div class="oval"><p>Django</p></div>
-                <div class="oval"><p>PostgreSQL</p></div>
-                <div class="oval"><p>Heroku</p></div>
-              </div>
-              <p>
-                Full-stack web app using Django and PostgreSQL that lets
-                families and communities create digital timelines through shared
-                stories, with future support for photos and videos. Features a
-                secure RESTful API with user authentication, scalable relational
-                models, and responsive design.
-              </p>
-              <div class="links-mobile-size">
-                <a
-                  target="_blank"
-                  href="https://rooted-e26962aac72d.herokuapp.com/"
-                >
-                  Live Demo<i data-feather="arrow-up-right"></i>
-                </a>
-                <a target="_blank" href="https://github.com/lanewells/rooted"
-                  >Repository<i data-feather="arrow-up-right"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="flex-row">
-            <div class="flex-column column-justify-right">
-              <a target="_blank" href="https://mashed.delaneywells.dev">
-                <div class="thumbnail">
-                  <img src="assets/images/mashed-empty.png" />
-                </div>
-              </a>
-              <div class="links-full-size">
-                <a target="_blank" href="https://mashed.delaneywells.dev">
-                  Live Site
-                  <i data-feather="arrow-up-right"></i>
-                </a>
-                <a target="_blank" href="https://github.com/lanewells/mashed"
-                  >Repository<i data-feather="arrow-up-right"></i
-                ></a>
-              </div>
-            </div>
-            <div class="flex-column column-justify-left">
-              <h2><span class="coder-gxrl">04.</span> Mashed</h2>
-              <div class="oval-container">
-                <div class="oval"><p>JavaScript</p></div>
-                <div class="oval"><p>HTML/CSS</p></div>
-              </div>
-              <p>
-                Browser-based redesign of the classic pen-and-paper game MASH,
-                transforming predictive storytelling into a playful, interactive
-                experience. Game logic and mechanics replicate the original
-                gameplay, coded in vanilla JavaScript with efficient event
-                handling, DOM manipulation, and a fully responsive UI for smooth
-                play across devices.
-              </p>
-              <div class="links-mobile-size">
-                <a target="_blank" href="https://mashed.delaneywells.dev">
-                  Live Site
-                  <i data-feather="arrow-up-right"></i>
-                </a>
-                <a target="_blank" href="https://github.com/lanewells/mashed"
-                  >Repository<i data-feather="arrow-up-right"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="resume" class="block-container section">
-        <h3 class="coder-gxrl title">
-          I have professional experience through:
-        </h3>
-
-        <div class="flex-container">
-          <div class="flex-row">
-            <div class="flex-column column-justify-right">
-              <p>SEPT - DEC 2024</p>
-            </div>
-            <div class="flex-column column-justify-left">
-              <h2>Software Engineering Fellow</h2>
-              <h3>General Assembly</h3>
-              <div>
-                <a
-                  target="_blank"
-                  href="https://drive.google.com/file/d/18IUNZebtIgQpibNEgaAztrnhJ4Vb_bI5/view?usp=drive_link"
-                  >Certificate of Completion<i data-feather="arrow-up-right"></i
-                ></a>
-                <p>
-                  Completed full-time Software Engineering Immersive with 480+
-                  hours of hands-on professional training in full-stack
-                  development. Designed, built, and deployed four full-stack
-                  applications, leading RESTful API development, database
-                  architecture, and front-end integration. Collaborated in Agile
-                  remote teams, utilizing Git version control, CI/CD workflows,
-                  and cloud-based deployment to deliver scalable, user-centered
-                  solutions.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="flex-row">
-            <div class="flex-column column-justify-right">
-              <p>2021 - 2023</p>
-            </div>
-            <div class="flex-column column-justify-left">
-              <h2>Graphic Designer</h2>
-              <h3>Urban Arena</h3>
-              <p class="sublabel"></p>
-              <div>
-                <p class="sublabel">
-                  Landscape Architecture, Architecture, Planning
-                </p>
-                <p class="sublabel">Costa Mesa, CA</p>
-                <p>
-                  Managed 10+ architecture and branding projects weekly,
-                  delivering digital and print assets, technical documents, and
-                  leading collaborative workflows. Optimized company website for
-                  WCAG 2.1 compliance using WordPress, reducing storage needs by
-                  40%. Co-founded new branding department, increasing team size
-                  2X and conducting development of brand guidelines.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="flex-row">
-            <div class="flex-column column-justify-right">
-              <p>2020 - <strong>PRESENT</strong></p>
-            </div>
-            <div class="flex-column column-justify-left">
-              <h2>Graphic Designer</h2>
-              <h3>Freelance</h3>
-              <p class="sublabel"></p>
-              <div>
-                <p class="sublabel">Remote</p>
-                <p>
-                  Ideate and deliver custom digital assets—branding, websites,
-                  illustrations, and merchandise tailored to client needs. Apply
-                  contemporary design principles and professional software
-                  tools. Manage end-to-end client communication and
-                  self-directed marketing to build a consistent client base.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- <div class="flex-row">
-            <div class="flex-column column-justify-right">
-              <p>2019-2021</p>
-            </div>
-            <div class="flex-column column-justify-left">
-              <h2>Legal Assistant</h2>
-              <h3>Carsel & Borjas, LLP</h3>
-              <p class="sublabel">San Luis Obispo, CA</p>
-              <p>
-                Drafted legal documentation and filings for probate and business
-                law cases. Ensured compliance with licensing and regulatory
-                standards for LLC formation. Managed front desk operations,
-                client intake, and preparation of case materials.
-              </p>
-            </div>
-          </div> -->
-
-          <div class="flex-row">
-            <div class="flex-column column-justify-right">
-              <p>2019</p>
-            </div>
-            <div class="flex-column column-justify-left">
-              <h2>Bachelor of Arts</h2>
-              <h3>California Polytechnic State University, SLO</h3>
-              <p class="sublabel">San Luis Obispo, CA</p>
-            </div>
-          </div>
-
-          <div class="quick-link">
-            <a target="_blank" href="assets/files/DelaneyWells_Resume.pdf">
-              <div class="row">
-                <img src="assets/images/resume.png" alt="GitHub logo" />
-                View my full resume<i data-feather="arrow-up-right"></i>
-              </div>
+          <div class="links">
+            <a
+              class="link"
+              href="https://github.com/lanewells"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="assets/images/github.png" alt="" loading="lazy" />
+              github.com/lanewells <i data-feather="arrow-up-right"></i>
+            </a>
+            <a
+              class="link"
+              href="https://www.linkedin.com/in/delaneywells/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="assets/images/linkedin.png" alt="" loading="lazy" />
+              /in/delaneywells <i data-feather="arrow-up-right"></i>
             </a>
           </div>
         </div>
-      </div>
 
-      <div id="more" class="block-container section">
-        <h3 class="coder-gxrl title">Outside of work:</h3>
-        <p class="hobbies-text">
-          <span>I spend my time creating and building:</span> paintings, art
-          installations, woodworking projects, and whatever landscaping projects
-          my mom requests. I also love snowboarding, being outdoors, and most of
-          all, spending time with my nephew.
-        </p>
-        <div class="hobbies-gallery">
-          <div class="photo tall">
-            <img src="assets/images/snowboarding-aspen.jpg" alt="Photo 1" />
+        <nav class="nav coder" aria-label="Section navigation">
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="nav-list"
+          >
+            Menu <span class="nav-toggle-icon" aria-hidden="true"></span>
+          </button>
+
+          <div id="nav-list" class="nav-list">
+            <a href="#projects"><span class="slash">/</span> projects</a>
+            <a href="#tech"><span class="slash">/</span> tech</a>
+            <a href="#experience"><span class="slash">/</span> experience</a>
+            <a href="#more"><span class="slash">/</span> more</a>
           </div>
-          <div class="photo tall">
-            <img src="assets/images/walrus-illustration.jpg" alt="Photo 2" />
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="main">
+      <!-- PROJECTS -->
+      <section id="projects" class="section">
+        <div class="section-header">
+          <h2 class="section-title coder">/ projects</h2>
+        </div>
+
+        <!-- Featured project -->
+        <article class="project featured">
+          <div class="project-media">
+            <a
+              href="https://hung-up-demo.delaneywells.dev"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open Hung-Up live demo"
+            >
+              <img
+                src="assets/images/hung-up-thumbnail.png"
+                alt="Hung-Up digital wardrobe app screenshot"
+                loading="lazy"
+              />
+            </a>
           </div>
-          <div class="photo tall">
-            <img src="assets/images/deck-build.jpg" alt="Photo 3" />
+
+          <div class="project-body">
+            <div class="project-top">
+              <h3 class="project-title">Hung-Up</h3>
+              <div class="project-links">
+                <a
+                  href="https://hung-up-demo.delaneywells.dev"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Live <i data-feather="arrow-up-right"></i>
+                </a>
+                <a
+                  href="https://github.com/lanewells/hung-up-react"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Repo <i data-feather="arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <p class="project-one-liner">
+              Full-stack wardrobe management web app with image uploads, data
+              modeling, and live deployment. Enables users to catalog their
+              clothes, outfits, and plan for occasions to shorten time spent
+              getting ready.
+            </p>
+
+            <div class="chips">
+              <span class="chip">React</span>
+              <span class="chip">Node/Express</span>
+              <span class="chip">MongoDB</span>
+              <span class="chip">Cloudinary</span>
+              <span class="chip">Render</span>
+            </div>
+
+            <ul class="project-bullets">
+              <li>Modular React components for reusable UI</li>
+              <li>
+                Designed REST API and data models (items, outfits, categories)
+              </li>
+              <li>Image upload flow with Cloudinary and env config</li>
+            </ul>
           </div>
-          <div class="photo tall">
-            <img src="assets/images/woodworking.jpg" alt="Photo 4" />
+        </article>
+
+        <article class="project featured">
+          <div class="project-media">
+            <a
+              href="https://filter-builder.delaneywells.dev"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open Filter Builder live demo"
+            >
+              <img
+                src="assets/images/screenshot-default.jpg"
+                alt="Wardrobe Filter Builder app screenshot"
+                loading="lazy"
+              />
+            </a>
           </div>
-          <div class="photo tall">
-            <img src="assets/images/shohei-wedding.jpg" alt="Photo 5" />
+          <div class="project-body">
+            <div class="project-top">
+              <h3 class="project-title">Wardrobe Filter Builder</h3>
+              <div class="project-links">
+                <a
+                  href="https://filter-builder.delaneywells.dev"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Live <i data-feather="arrow-up-right"></i>
+                </a>
+                <a
+                  href="https://github.com/lanewells/hung-up-filter-builder-ts"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Repo <i data-feather="arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <p class="project-one-liner">
+              Type-safe filtering and sorting UI built with React and
+              TypeScript. Companion project to Hung-Up.
+            </p>
+
+            <div class="chips">
+              <span class="chip">TypeScript</span>
+              <span class="chip">React</span>
+              <span class="chip">Zod</span>
+            </div>
+
+            <ul class="project-bullets">
+              <li>
+                Discriminated unions and type guards for safe state updates
+              </li>
+              <li>Preset save/load with runtime validation (Zod)</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project featured">
+          <div class="project-media">
+            <a
+              href="https://rooted-e26962aac72d.herokuapp.com/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open Rooted live demo"
+            >
+              <img
+                src="assets/images/rooted-thumbnail.jpg"
+                alt="Rooted timeline app screenshot"
+                loading="lazy"
+              />
+            </a>
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <h3 class="project-title">Rooted</h3>
+              <div class="project-links">
+                <a
+                  href="https://rooted-e26962aac72d.herokuapp.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Live <i data-feather="arrow-up-right"></i>
+                </a>
+                <a
+                  href="https://github.com/lanewells/rooted"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Repo <i data-feather="arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <p class="project-one-liner">
+              Django and Postgres app for shared timelines with posts and
+              comments, built around auth and ownership rules.
+            </p>
+
+            <div class="chips">
+              <span class="chip">Django</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">Heroku</span>
+            </div>
+
+            <ul class="project-bullets">
+              <li>
+                User authentication and ownership-based authorization in Django
+              </li>
+              <li>Relational modeling and full CRUD</li>
+              <li>Deployed with env-based configuration</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project featured">
+          <div class="project-media">
+            <a
+              href="https://mashed.delaneywells.dev"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open Mashed live site"
+            >
+              <img
+                src="assets/images/mashed-empty.png"
+                alt="Mashed browser game screenshot"
+                loading="lazy"
+              />
+            </a>
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <h3 class="project-title">Mashed</h3>
+              <div class="project-links">
+                <a
+                  href="https://mashed.delaneywells.dev"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Live <i data-feather="arrow-up-right"></i>
+                </a>
+                <a
+                  href="https://github.com/lanewells/mashed"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Repo <i data-feather="arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <p class="project-one-liner">
+              Vanilla JS redesign of childhood game MASH with responsive UI and
+              event-driven game logic.
+            </p>
+
+            <div class="chips">
+              <span class="chip">JavaScript</span>
+              <span class="chip">HTML/CSS</span>
+            </div>
+
+            <ul class="project-bullets">
+              <li>DOM/event handling and game state logic</li>
+              <li>Responsive layout for smooth play on mobile</li>
+            </ul>
+          </div>
+        </article>
+        <div class="horiz-line"></div>
+      </section>
+
+      <!-- TECH -->
+      <section id="tech" class="section">
+        <div class="section-header">
+          <h2 class="section-title coder">/ tech</h2>
+        </div>
+
+        <div class="tech">
+          <div class="tech-block">
+            <h3 class="tech-title">Frontend</h3>
+            <div class="tech-pills">
+              <span class="pill">React</span>
+              <span class="pill">TypeScript</span>
+              <span class="pill">JavaScript</span>
+              <span class="pill">HTML/CSS</span>
+              <span class="pill">Accessibility (WCAG)</span>
+            </div>
+          </div>
+
+          <div class="tech-block">
+            <h3 class="tech-title">Backend and Data</h3>
+            <div class="tech-pills">
+              <span class="pill">Node.js</span>
+              <span class="pill">Express</span>
+              <span class="pill">REST APIs</span>
+              <span class="pill">PostgreSQL / SQL</span>
+              <span class="pill">MongoDB</span>
+              <span class="pill">Python</span>
+              <span class="pill">Django</span>
+            </div>
+          </div>
+
+          <div class="tech-block">
+            <h3 class="tech-title">Tools</h3>
+            <div class="tech-pills">
+              <span class="pill">Git</span>
+              <span class="pill">GitHub</span>
+              <span class="pill">Render</span>
+              <span class="pill">Cloudinary</span>
+            </div>
           </div>
         </div>
-      </div>
+        <div class="horiz-line"></div>
+      </section>
 
-      <footer><a href="#top">Back to top</a></footer>
-    </div>
+      <!-- EXPERIENCE -->
+      <section id="experience" class="section">
+        <div class="section-header">
+          <h2 class="section-title coder">/ experience</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="resume-cta">
+            <a
+              class="btn primary"
+              href="assets/files/DelaneyWells_Resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              PDF Resume <i data-feather="arrow-up-right"></i>
+            </a>
+          </div>
+          <div class="job">
+            <div class="job-meta">
+              <p class="job-date">Sep - Dec 2024</p>
+            </div>
+            <div class="job-body">
+              <h3 class="job-title">Software Engineering Fellow</h3>
+              <p class="job-org">General Assembly</p>
+              <ul class="job-bullets">
+                <li>
+                  Full-time software engineering program focused on full-stack
+                  development
+                </li>
+                <li>
+                  Designed, built, and deployed multiple apps, including both
+                  solo and team projects.
+                </li>
+                <li>
+                  Collaborated in Agile teams using Git workflows, code reviews,
+                  and CI/CD fundamentals.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="job">
+            <div class="job-meta">
+              <p class="job-date">Aug 2021 - Sep 2023</p>
+            </div>
+            <div class="job-body">
+              <h3 class="job-title">Graphic Designer (Architecture)</h3>
+              <p class="job-org">Urban Arena</p>
+              <ul class="job-bullets">
+                <li>
+                  Designed and delivered 10+ graphic media projects weekly
+                </li>
+                <li>
+                  Co-founded and scaled a branding department, mentoring 2 new
+                  designers.
+                </li>
+                <li>
+                  Redesigned the website for performance and WCAG accessibility,
+                  reducing storage usage by ~40%.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="job">
+            <div class="job-meta">
+              <p class="job-date">2020 - Present</p>
+            </div>
+            <div class="job-body">
+              <h3 class="job-title">Freelance Designer</h3>
+              <p class="job-org">Self-employed</p>
+              <ul class="job-bullets">
+                <li>
+                  Deliver branding, websites, illustrations, and digital assets
+                  end-to-end
+                </li>
+                <li>
+                  Own client communications, scoping, timelines, and delivery
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="job">
+            <div class="job-meta">
+              <p class="job-date">2019</p>
+            </div>
+            <div class="job-body">
+              <h3 class="job-title">B.A. Political Science</h3>
+              <p class="job-org">
+                California Polytechnic State University, SLO
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="horiz-line"></div>
+      </section>
+
+      <!-- MORE -->
+      <section id="more" class="section">
+        <div class="section-header">
+          <h2 class="section-title coder">/ more</h2>
+        </div>
+        <div class="more-wrap">
+          <p class="more-text">
+            I build things outside of software too: art installations,
+            woodworking projects, and crocheted pieces for my fam & friends.
+            <br />I also love snowboarding and being outdoors.
+          </p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-inner">
+          <a class="footer-link" href="#top">Back to top</a>
+          <span class="dot">•</span>
+          <a
+            class="footer-link"
+            href="mailto:delaneywellsk@gmail.com?subject=Connecting%20from%20your%20portfolio"
+          >
+            delaneywellsk@gmail.com
+          </a>
+        </div>
+      </footer>
+    </main>
 
     <script src="https://unpkg.com/feather-icons"></script>
     <script>
       feather.replace()
 
-      const sections = document.querySelectorAll(".section")
-      const navLinks = document.querySelectorAll("#navbar a")
+      // mobile nav toggle
+      const toggle = document.querySelector(".nav-toggle")
+      const navList = document.getElementById("nav-list")
 
-      window.addEventListener("scroll", () => {
-        let current = ""
-
-        sections.forEach((section) => {
-          const sectionTop = section.offsetTop
-          const sectionHeight = section.offsetHeight
-          if (window.scrollY >= sectionTop - sectionHeight / 3) {
-            current = section.getAttribute("id")
-          }
-        })
-
-        navLinks.forEach((link) => {
-          link.classList.remove("active")
-          if (link.getAttribute("href") === `#${current}`) {
-            link.classList.add("active")
-          }
-        })
+      toggle?.addEventListener("click", () => {
+        const expanded = toggle.getAttribute("aria-expanded") === "true"
+        toggle.setAttribute("aria-expanded", String(!expanded))
+        navList.classList.toggle("open")
       })
 
-      function toggleMenu() {
-        document.getElementById("navbar").classList.toggle("open")
-      }
-
-      document.querySelectorAll("#navbar a").forEach((link) => {
-        link.addEventListener("click", () => {
-          document.getElementById("navbar").classList.remove("open")
+      // close nav after click (on mobile)
+      document.querySelectorAll("#nav-list a").forEach((a) => {
+        a.addEventListener("click", () => {
+          toggle?.setAttribute("aria-expanded", "false")
+          navList.classList.remove("open")
         })
       })
     </script>
