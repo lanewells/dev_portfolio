@@ -440,23 +440,50 @@ hr {
   justify-content: flex-start;
 }
 
-.more-text {
-  margin: 0;
-  font-size: 14px;
-  max-width: 75ch;
+.section {
+  padding: 22px 0 56px;
+  scroll-margin-top: 44px;
 }
-.gallery {
-  margin-top: 14px;
+
+.section-header {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 10px;
+  margin-bottom: 18px;
 }
-.gallery img {
+
+.section-title {
+  margin: 0 0 20px;
+  padding-left: 10px;
+  color: var(--accent);
+  font-size: 20px;
+}
+
+.more-wrap {
+  min-height: 400px;
+  padding: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 14px;
-  border: 1px solid var(--border);
-  box-shadow: 10px 10px var(--accent-2);
-  aspect-ratio: 2 / 3;
-  object-fit: cover;
+  overflow: hidden;
+  position: relative;
+  background-image: url("assets/images/nature-photo.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  outline: 1.5px solid var(--border);
+}
+
+.more-text {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  max-width: 53ch;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+  color: white;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.35);
 }
 
 .footer {
