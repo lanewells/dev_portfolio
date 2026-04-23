@@ -36,7 +36,7 @@
     <header class="shell">
       <div class="sidebar" aria-label="Primary sidebar">
         <div class="identity">
-          <p class="eyebrow coder">Hi, my name is</p>
+          <p class="eyebrow coder">hi, my name is</p>
           <h1 class="name">Delaney Wells</h1>
           <p class="role">Software Engineer</p>
 
@@ -150,8 +150,10 @@
             </div>
 
             <p class="project-one-liner">
-              Full-stack digital wardrobe app: modular React UI + Node/Express
-              REST API + MongoDB + Cloudinary uploads.
+              Full-stack wardrobe management web app with image uploads, data
+              modeling, and live deployment. Enables users to catalog their
+              clothes, outfits, and plan for occasions to shorten time spent
+              getting ready.
             </p>
 
             <div class="chips">
@@ -160,16 +162,14 @@
               <span class="chip">MongoDB</span>
               <span class="chip">Cloudinary</span>
               <span class="chip">Render</span>
-              <span class="chip">SCSS</span>
             </div>
 
             <ul class="project-bullets">
+              <li>Modular React components for reusable UI</li>
               <li>
-                Reusable component UI with filtering, browsing, and fast
-                iteration
+                Designed REST API and data models (items, outfits, categories)
               </li>
-              <li>REST API + data models for items, outfits, categories</li>
-              <li>Image upload flow via Cloudinary + env-based config</li>
+              <li>Image upload flow with Cloudinary and env config</li>
             </ul>
           </div>
         </article>
@@ -211,8 +211,8 @@
             </div>
 
             <p class="project-one-liner">
-              Strict TypeScript demo that mirrors a real product feature:
-              filters + sorts + saved presets.
+              Type-safe filtering and sorting UI built with React and
+              TypeScript. Companion project to Hung-Up.
             </p>
 
             <div class="chips">
@@ -222,9 +222,10 @@
             </div>
 
             <ul class="project-bullets">
-              <li>Discriminated unions + type guards for safe state updates</li>
+              <li>
+                Discriminated unions and type guards for safe state updates
+              </li>
               <li>Preset save/load with runtime validation (Zod)</li>
-              <li>Built as a companion feature to Hung-Up</li>
             </ul>
           </div>
         </article>
@@ -266,20 +267,21 @@
             </div>
 
             <p class="project-one-liner">
-              Django + Postgres app for shared timelines with posts/comments,
-              built around auth + ownership rules.
+              Django and Postgres app for shared timelines with posts and
+              comments, built around auth and ownership rules.
             </p>
 
             <div class="chips">
               <span class="chip">Django</span>
               <span class="chip">PostgreSQL</span>
-              <span class="chip">JWT</span>
               <span class="chip">Heroku</span>
             </div>
 
             <ul class="project-bullets">
-              <li>JWT auth + ownership-based authorization</li>
-              <li>Relational modeling + full CRUD</li>
+              <li>
+                User authentication and ownership-based authorization in Django
+              </li>
+              <li>Relational modeling and full CRUD</li>
               <li>Deployed with env-based configuration</li>
             </ul>
           </div>
@@ -322,8 +324,8 @@
             </div>
 
             <p class="project-one-liner">
-              Vanilla JS remake of MASH with responsive UI and event-driven game
-              logic.
+              Vanilla JS redesign of childhood game MASH with responsive UI and
+              event-driven game logic.
             </p>
 
             <div class="chips">
@@ -332,14 +334,13 @@
             </div>
 
             <ul class="project-bullets">
-              <li>DOM/event handling + game state logic</li>
+              <li>DOM/event handling and game state logic</li>
               <li>Responsive layout for smooth play on mobile</li>
             </ul>
           </div>
         </article>
+        <div class="horiz-line"></div>
       </section>
-
-      <hr />
 
       <!-- TECH -->
       <section id="tech" class="section">
@@ -349,28 +350,26 @@
 
         <div class="tech">
           <div class="tech-block">
-            <h3 class="tech-title">Core</h3>
+            <h3 class="tech-title">Frontend</h3>
             <div class="tech-pills">
               <span class="pill">React</span>
               <span class="pill">TypeScript</span>
               <span class="pill">JavaScript</span>
-              <span class="pill">HTML</span>
-              <span class="pill">CSS</span>
+              <span class="pill">HTML/CSS</span>
               <span class="pill">Accessibility (WCAG)</span>
             </div>
           </div>
 
           <div class="tech-block">
-            <h3 class="tech-title">Backend + Data</h3>
+            <h3 class="tech-title">Backend and Data</h3>
             <div class="tech-pills">
               <span class="pill">Node.js</span>
               <span class="pill">Express</span>
               <span class="pill">REST APIs</span>
-              <span class="pill">SQL</span>
-              <span class="pill">PostgreSQL</span>
+              <span class="pill">PostgreSQL / SQL</span>
               <span class="pill">MongoDB</span>
-              <span class="pill">Django</span>
               <span class="pill">Python</span>
+              <span class="pill">Django</span>
             </div>
           </div>
 
@@ -379,16 +378,13 @@
             <div class="tech-pills">
               <span class="pill">Git</span>
               <span class="pill">GitHub</span>
-              <span class="pill">Cloudinary</span>
               <span class="pill">Render</span>
-              <span class="pill">Heroku</span>
-              <span class="pill">Agile</span>
+              <span class="pill">Cloudinary</span>
             </div>
           </div>
         </div>
+        <div class="horiz-line"></div>
       </section>
-
-      <hr />
 
       <!-- EXPERIENCE -->
       <section id="experience" class="section">
@@ -397,6 +393,16 @@
         </div>
 
         <div class="timeline">
+          <div class="resume-cta">
+            <a
+              class="btn primary"
+              href="assets/files/DelaneyWells_Resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              PDF Resume <i data-feather="arrow-up-right"></i>
+            </a>
+          </div>
           <div class="job">
             <div class="job-meta">
               <p class="job-date">Sep - Dec 2024</p>
@@ -406,16 +412,16 @@
               <p class="job-org">General Assembly</p>
               <ul class="job-bullets">
                 <li>
-                  Full-time immersive focused on full-stack development (React,
-                  Node, Django, SQL)
+                  Full-time software engineering program focused on full-stack
+                  development
                 </li>
                 <li>
-                  Built and deployed multiple apps with REST APIs, auth, and
-                  relational data modeling
+                  Designed, built, and deployed multiple apps, including both
+                  solo and team projects.
                 </li>
                 <li>
-                  Agile teamwork with Git workflows, code reviews, and CI/CD
-                  fundamentals
+                  Collaborated in Agile teams using Git workflows, code reviews,
+                  and CI/CD fundamentals.
                 </li>
               </ul>
             </div>
@@ -429,12 +435,17 @@
               <h3 class="job-title">Graphic Designer (Architecture)</h3>
               <p class="job-org">Urban Arena</p>
               <ul class="job-bullets">
-                <li>Led design and delivery of 10+ projects weekly</li>
                 <li>
-                  Redesigned website for performance + WCAG accessibility
-                  (reduced storage ~40%)
+                  Designed and delivered 10+ graphic media projects weekly
                 </li>
-                <li>Co-founded and scaled a branding department</li>
+                <li>
+                  Co-founded and scaled a branding department, mentoring 2 new
+                  designers.
+                </li>
+                <li>
+                  Redesigned the website for performance and WCAG accessibility,
+                  reducing storage usage by ~40%.
+                </li>
               </ul>
             </div>
           </div>
@@ -448,10 +459,12 @@
               <p class="job-org">Self-employed</p>
               <ul class="job-bullets">
                 <li>
-                  Delivered branding, websites, illustrations, and digital
-                  assets end-to-end
+                  Deliver branding, websites, illustrations, and digital assets
+                  end-to-end
                 </li>
-                <li>Owned client comms, scoping, timelines, and delivery</li>
+                <li>
+                  Own client communications, scoping, timelines, and delivery
+                </li>
               </ul>
             </div>
           </div>
@@ -467,21 +480,9 @@
               </p>
             </div>
           </div>
-
-          <div class="resume-cta">
-            <a
-              class="btn primary"
-              href="assets/files/DelaneyWells_Resume.pdf"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Resume <i data-feather="arrow-up-right"></i>
-            </a>
-          </div>
         </div>
+        <div class="horiz-line"></div>
       </section>
-
-      <hr />
 
       <!-- MORE -->
       <section id="more" class="section">
@@ -490,20 +491,15 @@
         </div>
 
         <p class="more-text">
-          I build things outside of software too: paintings, installations,
-          woodworking, and whatever landscaping project my mom requests. I also
-          love snowboarding and being outdoors.
+          I build things outside of software too: art installations, woodworking
+          projects, and crocheted pieces for my fam & friends. I also love
+          snowboarding and being outdoors.
         </p>
 
         <div class="gallery">
           <img
             src="assets/images/snowboarding-aspen.jpg"
             alt="Snowboarding"
-            loading="lazy"
-          />
-          <img
-            src="assets/images/walrus-illustration.jpg"
-            alt="Illustration"
             loading="lazy"
           />
           <img
@@ -514,11 +510,6 @@
           <img
             src="assets/images/woodworking.jpg"
             alt="Woodworking"
-            loading="lazy"
-          />
-          <img
-            src="assets/images/shohei-wedding.jpg"
-            alt="Photo"
             loading="lazy"
           />
         </div>

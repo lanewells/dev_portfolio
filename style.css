@@ -166,11 +166,13 @@ img {
   border-radius: 12px;
   border: 1px solid transparent;
 }
+
 .link:hover {
   border-color: var(--border);
   text-decoration: none;
   color: var(--text-strong);
 }
+
 .link img {
   width: 18px;
   height: 18px;
@@ -223,8 +225,13 @@ img {
 }
 
 hr {
-  border: 0.5px solid var(--text);
-  margin-bottom: 50px;
+  border-top: 1px solid var(--border);
+  margin: 50px auto 10px;
+}
+
+.horiz-line {
+  border-top: 1px solid var(--border);
+  margin: 50px auto 10px;
 }
 
 .main {
@@ -234,17 +241,19 @@ hr {
 
 .section {
   padding: 22px 0 56px;
-  scroll-margin-top: 90px;
+  scroll-margin-top: 44px;
 }
+
 .section-header {
   display: grid;
   gap: 10px;
   margin-bottom: 18px;
 }
+
 .section-title {
   margin: 0;
   margin-bottom: 20px;
-  padding-left: 30px;
+  padding-left: 10px;
   color: var(--accent);
   font-size: 20px;
 }
@@ -265,7 +274,7 @@ hr {
 .project.featured {
   display: grid;
   grid-template-columns: 1.15fr 1fr;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
 }
 
 .project.card {
@@ -289,6 +298,7 @@ hr {
   display: grid;
   gap: 10px;
 }
+
 .project-top {
   display: flex;
   align-items: baseline;
@@ -302,7 +312,8 @@ hr {
 }
 .project-links {
   display: inline-flex;
-  gap: 12px;
+  gap: 5px;
+  min-width: fit-content;
   flex-wrap: wrap;
 }
 .project-links a {
