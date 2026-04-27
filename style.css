@@ -523,75 +523,173 @@ a:hover svg.feather {
   stroke: var(--accent);
 }
 
-/* Focus visibility */
 :focus-visible {
   outline: 3px solid rgba(80, 216, 223, 0.55);
   outline-offset: 3px;
   border-radius: 10px;
 }
 
-/* Responsive */
 @media (max-width: 1100px) {
-  .shell {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    height: auto;
-    border-right: none;
-    border-bottom: 1px solid var(--border);
-    z-index: 1000;
+  .nav {
+    position: relative;
   }
-  .main {
-    margin-left: 0;
-    padding-top: 22px;
-  }
-  .sidebar {
-    gap: 12px;
-  }
-  .name {
-    font-size: 28px;
-  }
-  .nav-toggle {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-  }
+
   .nav-list {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    right: 0;
     display: none;
+    gap: 6px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 8px;
+    box-shadow: var(--shadow);
   }
+
   .nav-list.open {
     display: grid;
   }
-  .project.featured {
-    grid-template-columns: 1fr;
-  }
-  .project.featured .project-media img {
+
+  .shell {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    width: 100%;
+    padding: 14px 18px;
     border-right: none;
     border-bottom: 1px solid var(--border);
+    z-index: 1000;
+    backdrop-filter: blur(10px);
   }
-  .project-grid {
-    grid-template-columns: 1fr;
+
+  .sidebar {
+    display: grid;
+    gap: 12px;
   }
-  .tech {
-    grid-template-columns: 1fr;
+
+  .identity {
+    gap: 6px;
   }
-  .job {
-    grid-template-columns: 1fr;
+
+  .eyebrow,
+  .hero,
+  .links {
+    display: none;
   }
-  .gallery {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  .name {
+    font-size: 24px;
+  }
+
+  .role {
+    font-size: 15px;
+  }
+
+  .cta-row {
+    margin-top: 4px;
+  }
+
+  .btn {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  .nav {
+    width: 100%;
+  }
+
+  .nav-toggle {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .nav-list {
+    display: none;
+    gap: 6px;
+  }
+
+  .nav-list.open {
+    display: grid;
+  }
+
+  .nav-list a {
+    padding: 9px 10px;
+    font-size: 13px;
+  }
+
+  .main {
+    margin-left: 0;
+    padding: 140px min(50px, 4vw) 22px;
   }
 }
 
 @media (max-width: 520px) {
+  .shell {
+    padding: 12px 14px;
+  }
+
   .main {
-    padding: 22px 16px;
+    padding: 175px 14px 20px;
   }
-  .gallery {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  .name {
+    font-size: 22px;
   }
+
   .cta-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sidebar {
+    display: flex;
+  }
+
+  .btn {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav-toggle {
+    gap: 5px;
+    justify-content: center;
+  }
+
+  .section {
+    scroll-margin-top: 175px;
+  }
+
+  .project-top {
+    display: grid;
+    justify-content: initial;
     gap: 8px;
+  }
+
+  .project.featured {
+    grid-template-columns: none;
+  }
+
+  .project-links {
+    width: 100%;
+  }
+
+  .project-links a {
+    flex: 1;
+    justify-content: center;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .tech {
+    grid-template-columns: none;
+  }
+
+  .job {
+    grid-template-columns: none;
   }
 }
