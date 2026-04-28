@@ -131,13 +131,12 @@
     </header>
 
     <main id="main" class="main">
-      <!-- PROJECTS -->
+      <!-- Projects section -->
       <section id="projects" class="section">
         <div class="section-header">
           <h2 class="section-title coder">/ projects</h2>
         </div>
 
-        <!-- Featured project -->
         <article class="project featured">
           <div class="project-media">
             <a
@@ -382,6 +381,7 @@
         <div class="horiz-line"></div>
       </section>
 
+      <!-- Tech section -->
       <section id="tech" class="section">
         <div class="section-header">
           <h2 class="section-title coder">/ tech</h2>
@@ -425,7 +425,7 @@
         <div class="horiz-line"></div>
       </section>
 
-      <!-- EXPERIENCE -->
+      <!-- Experience section -->
       <section id="experience" class="section">
         <div class="section-header">
           <h2 class="section-title coder">/ experience</h2>
@@ -523,7 +523,7 @@
         <div class="horiz-line"></div>
       </section>
 
-      <!-- MORE -->
+      <!-- More section -->
       <section id="more" class="section">
         <div class="section-header">
           <h2 class="section-title coder">/ more</h2>
@@ -555,22 +555,33 @@
     <script>
       feather.replace()
 
-      // mobile nav toggle
       const toggle = document.querySelector(".nav-toggle")
+      const nav = document.querySelector(".nav")
       const navList = document.getElementById("nav-list")
 
-      toggle?.addEventListener("click", () => {
+      const closeNav = () => {
+        toggle?.setAttribute("aria-expanded", "false")
+        navList?.classList.remove("open")
+      }
+
+      toggle?.addEventListener("click", (event) => {
+        event.stopPropagation()
+
         const expanded = toggle.getAttribute("aria-expanded") === "true"
         toggle.setAttribute("aria-expanded", String(!expanded))
-        navList.classList.toggle("open")
+        navList?.classList.toggle("open")
       })
 
-      // close nav after click (on mobile)
+      document.addEventListener("click", (event) => {
+        const clickedInsideNav = nav?.contains(event.target)
+
+        if (!clickedInsideNav) {
+          closeNav()
+        }
+      })
+
       document.querySelectorAll("#nav-list a").forEach((a) => {
-        a.addEventListener("click", () => {
-          toggle?.setAttribute("aria-expanded", "false")
-          navList.classList.remove("open")
-        })
+        a.addEventListener("click", closeNav)
       })
     </script>
   </body>
